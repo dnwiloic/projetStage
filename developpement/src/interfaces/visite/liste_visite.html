@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../dist/style.css">
-    <title>Ouvrages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
     <div class="list">
     
-        <h1 class="titre-tableau"> Liste des visiteurs</h1>
+        <h1 class="titre-tableau"> Liste des visites</h1>
 
         <button class="open-popup btn-ajouter" popup_to_open="p_nom_visiteur">Ajouter</button>
         <div>
@@ -59,13 +59,27 @@
             </tr>
         </table>
     </div>
-    <div class="popup-back" popup_id="p_form_visiteur">
+    <div class="popup-back" popup_id="p_nom_visiteur">
         <form action="" class="popup-form">
-            <button type="button"><img src="../../../image/button/bouton-retour.png" alt="retour" class="open-popup close-popup" popup_to_close="p_form_visiteur" popup_to_open="p_nom_visiteur" ></button>
+            <label for="nom" class="requis">Nom</label>
+            <div >
+                <input type="text" class="textfield" id="nom" autofocus placeholder="..." required>
+            </div>
+            <div class="form-footer">
+                <div >
+                    <input type="button" class="close-popup" popup_to_close="p_nom_visiteur" value="Annuler">
+                    <input type="button" value="suivant" class="open-popup close-popup" popup_to_close="p_nom_visiteur" popup_to_open="p_form_visite" >
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="popup-back" popup_id="p_form_visite">
+        <form action="" class="popup-form">
+            <button type="button"><img src="../../../image/button/bouton-retour.png" alt="retour" class="open-popup close-popup" popup_to_close="p_form_visite" popup_to_open="p_nom_visiteur" ></button>
             <div class="form-header">
                 <h2> SEED RECEPTION</h2>
                 <br>
-                <h3>Ajouter un visiteur</h3>
+                <h3>Ajouter une visite</h3>
             </div>
             <label for="nom" class="requis">Nom</label>
             <div >
@@ -90,7 +104,7 @@
 
             <div class="form-footer">
                 <div>
-                    <input type="button" class="close-popup" popup_to_close="p_form_visiteur" value="Annuler">
+                    <input type="button" class="close-popup" popup_to_close="p_form_visite" value="Annuler">
                     <input type="submit" value="Ajouter">
                 </div>
             </div>

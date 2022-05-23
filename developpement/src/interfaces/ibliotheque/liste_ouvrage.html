@@ -8,32 +8,33 @@
     <title>Ouvrages</title>
 </head>
 <body>
-    <div class="popup-back">
+    <div class="popup-back" popup_id="p_form_ouv">
+        <span class="close-popup" popup_to_close="p_form_ouv" style="float: right; padding: 5px; margin-right: 30px; font-size: 30px; color: white; cursor: pointer;">X</span>
         <form action="" class="popup-form">
             <div class="form-header">
                 <h2> SEED RECEPTION</h2>
                 <br>
                 <h3>Nouvel ouvrage</h3>
             </div>
-            <label for="titre">Titre</label>
+            <label for="titre" class="requis" >Titre</label>
             <div >
-                <input type="text" class="textfield" id="titre" placeholder="un_titre" required>
+                <input type="text" class="textfield" id="titre"  placeholder="un_titre" required>
             </div>
-            <label for="nom_auteur">Nom de l'auteur</label>
+            <label for="nom_auteur" class="requis">Nom de l'auteur</label>
             <div>
                 <input type="text" class="textfield" id="nom_auteur" placeholder="exp: " required>
             </div>
-            <label for="m_edition">Maison d'edition</label>
+            <label for="m_edition" class="requis">Maison d'edition</label>
             <div >
                 <input type="text" class="textfield" placeholder="un nom" required>
             </div>
-            <label for="nbr_p">Nombre de pages</label>
+            <label for="nbr_p" class="requis">Nombre de pages</label>
             <div>
                 <input type="number" id="nbr_p"class="textfield"  placeholder="200" required>
             </div>
 
             <div class="form-footer">
-                <input type="button" class="close-popup" value="Annuler">
+                <input type="button" class="close-popup" popup_to_close="p_form_ouv" value="Annuler">
                 <input type="submit" value="Ajouter">
             </div>
             
@@ -41,7 +42,7 @@
     </div>
 
     <div>
-        <button class="open-popup">Ajouter</button>
+        <button class="open-popup" popup_to_open="p_form_list_ouv">Ajouter</button>
     </div>
 
     <script src="../../popup.js"></script>

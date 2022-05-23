@@ -2,7 +2,8 @@
 @tailwind utilities;
 @tailwind components;
 
-* {
+*
+{
     box-sizing: border-box;
 }
 
@@ -21,21 +22,22 @@ input:focus
 
 .form-header
 {
-    @apply text-center mb-10;
+    @apply text-center mb-5;
 }
 
 .form-footer
 {
-    @apply mt-10;
+    @apply mt-5;
+    height: 20px;
 }
 
 .textfield
 {
-    @apply ring-1 ring-gray-300 p-2 my-3 relative w-full bg-gray-50 rounded-lg transition-all duration-200;
+    @apply ring-1 ring-gray-300 p-1 my-3 relative w-full bg-gray-50 rounded-lg transition-all duration-200;
 }
 .textfield:focus
 {
-    @apply ring-blue-600 ring-2;
+    @apply ring-blue-600 ring-2 outline-none;
 }
 input.textfield
 {
@@ -53,15 +55,81 @@ input.textfield
     float: right;
     @apply text-white bg-blue-600 p-2 rounded-xl transition-colors cursor-pointer duration-500;
 }
+.form-footer>div
+{
+    float: right;
+    width: max-content;
+    
+}
+
+.form-footer>div input[value="Annuler"]{
+    @apply rounded-xl bg-red-500 text-white /*relative left-2 z-10*/ p-2 ;
+}
+.form-footer>div input[value="suivant"], .form-footer>div input[type="submit"]{
+    @apply rounded-xl bg-blue-500 text-white /*relative -left-2*/ p-2 ;
+
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"]
+{
+    cursor:pointer;
+}
 
 input[type="submit"]:hover
 {
     @apply bg-blue-400;
 }
 
+.requis::after
+{
+    content: '*';
+    color:red;
+}
+
 a 
 {
     @apply text-blue-600 ;
+}
+
+.list
+{
+    width: 94%;
+    margin: auto;
+    position: relative;
+}
+
+.list>table
+{
+    width: fit-content;
+    @apply my-5 text-left;
+}
+
+.list>table tr
+{
+    @apply odd:bg-slate-200;
+}
+
+.list>table th,.list>table td
+{
+    @apply ring-1 ring-gray-300 p-2;
+    width: 5%;
+}
+
+.titre-tableau
+{
+    text-align: center;
+}
+
+.btn-ajouter
+{
+    position: absolute;
+    right: 0px;
+    @apply p-2 text-white bg-blue-600 rounded-lg transition-all duration-200;
+}
+
+.btn-ajouter:hover
+{
+    @apply bg-blue-400;
 }
 
 .popup-back
@@ -90,3 +158,4 @@ a
     margin-top: 3%;
     @apply bg-white rounded-3xl p-8;
 }
+

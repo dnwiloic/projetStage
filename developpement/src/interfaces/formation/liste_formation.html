@@ -9,20 +9,20 @@
 </head>
 <body>
     <div>
-        <button class="open-popup">Ajouter</button>
+        <button class="open-popup" popup_to_open="p_form_formation">Ajouter</button>
     </div>
-    <div class="popup-back">
+    <div class="popup-back" popup_id="p_form_formation">
         <form action="" class="popup-form">
             <div class="form-header">
                 <h2> SEED RECEPTION</h2>
                 <br>
                 <h3>Ajouter une formation</h3>
             </div>
-            <label for="nom">Nom</label>
+            <label for="nom" class="requis">Nom</label>
             <div >
                 <input type="text" class="textfield" id="nom" placeholder="..." required>
             </div>
-            <label for="nomF">Enseignant</label>
+            <label for="nomF" class="requis">Enseignant</label>
             <div >
                 <select class="textfield" id="nomF" required>
                     <option value="--">opt1</option>    
@@ -31,18 +31,18 @@
                     <option value="--">opt1</option>    
                 </select>
             </div>
-            <label for="prix">Prix</label>
+            <label for="prix" class="requis">Prix</label>
             <div >
-                <input type="number" id="prix" class="textfield" step="1000" placeholder="...">
+                <input type="number" id="prix" class="textfield" required step="1000" placeholder="...">
             </div>
             <label for="duree">Duree (en semaines)</label>
             <div>
-                <input type="number" class="textfield" id="duree" placeholder="..." required>
+                <input type="number" class="textfield" class="requis" id="duree" placeholder="..." required>
             </div>
     
 
             <div class="form-footer">
-                <input type="button" class="close-popup" value="Annuler">
+                <input type="button" class="close-popup" popup_to_close="p_form_formation" value="Annuler">
                 <input type="submit" value="Ajouter">
             </div>
             

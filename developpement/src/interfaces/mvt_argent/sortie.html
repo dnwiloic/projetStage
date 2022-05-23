@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../dist/style.css">
-    <title>Ouvrages</title>
+    <title>seed reception</title>
 </head>
 <body>
     <div class="list">
     
-        <h1 class="titre-tableau"> Liste des visiteurs</h1>
+        <h1 class="titre-tableau"> Liste des sorties d'argent </h1>
 
-        <button class="open-popup btn-ajouter" popup_to_open="p_nom_visiteur">Ajouter</button>
+        <button class="open-popup btn-ajouter" popup_to_open="p_form_sa">Ajouter</button>
         <div>
             <span >nombre d'elements: </span>
         </div> 
@@ -58,41 +58,35 @@
                 <td>...</td>
             </tr>
         </table>
+        <button class="btn-ajouter">Aller aux recapitulatifs</button>
     </div>
-    <div class="popup-back" popup_id="p_form_visiteur">
+    <div class="popup-back" popup_id="p_form_sa">
         <form action="" class="popup-form">
-            <button type="button"><img src="../../../image/button/bouton-retour.png" alt="retour" class="open-popup close-popup" popup_to_close="p_form_visiteur" popup_to_open="p_nom_visiteur" ></button>
             <div class="form-header">
                 <h2> SEED RECEPTION</h2>
                 <br>
-                <h3>Ajouter un visiteur</h3>
+                <h3>Enregistrer une entrée d'argent </h3>
             </div>
-            <label for="nom" class="requis">Nom</label>
+            <label for="Emp" class="requis">Employé</label>
             <div >
-                <input type="text" class="textfield" id="nom" autofocus placeholder="..." required>
+                <input type="text" class="textfield" id="emp" placeholder="..." required>
             </div>
-            <label for="prenom">Prenom</label>
+            <label for="date" class="requis">date</label>
             <div >
-                <input type="text" class="textfield" placeholder="...">
+                <input type="date" class="textfield" required>
             </div>
-            <label for="cni" class="requis">Numero CNI</label>
+            <label for="montant" class="requis">Montant</label>
             <div>
-                <input type="text" class="textfield" id="cni" placeholder="..." required>
+                <input type="nimber" class="textfield" id="montant" step="100" placeholder="..." required>
             </div>
-            <label for="Tel" class="requis">Telphone</label>
-            <div>
-                <input type="number" id="tel"class="textfield"  placeholder="..." required>
-            </div>
-            <label for="email">Email</label>
+            <label for="motif" class="requis">Motif</label>
             <div >
-                <input type="Email" class="textfield" placeholder="...">
+                <input type="number" id="motif" class="textfield" placeholder="..." required>
             </div>
 
             <div class="form-footer">
-                <div>
-                    <input type="button" class="close-popup" popup_to_close="p_form_visiteur" value="Annuler">
-                    <input type="submit" value="Ajouter">
-                </div>
+                <input type="button" class="close-popup" popup_to_close="p_form_sa" value="Annuler">
+                <input type="submit" value="Ajouter">
             </div>
             
         </form>
