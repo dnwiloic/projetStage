@@ -12,18 +12,18 @@
     
         <h1 class="titre-tableau"> Liste des visites</h1>
 
-        <button class="open-popup btn-ajouter" popup_to_open="p_nom_visiteur">Ajouter</button>
+        <button class="open-popup btn-ajouter" popup_to_open="p_form_visite">Ajouter</button>
         <div>
             <span >nombre d'elements: </span>
         </div> 
         <table>
             <tr>
-                <th>Nom</th>
-                <th>Prenom</th>
-                <th>N CNI</th>
-                <th>Telephone</th>
-                <th>Email</th>
-                <th>Actions</th>
+                <th>Visiteur</th>
+                <th>Employer</th>
+                <th>Raison</th>
+                <th>Date</th>
+                <th>Heure de Debut</th>
+                <th>Heure de fin</th>
             </tr>
             <tr>
                 <td>...</td>
@@ -40,6 +40,7 @@
                 <td>...</td>
                 <td>...</td>
                 <td>...</td>
+
             </tr>
             <tr>
                 <td>...</td>
@@ -59,47 +60,34 @@
             </tr>
         </table>
     </div>
-    <div class="popup-back" popup_id="p_nom_visiteur">
-        <form action="" class="popup-form">
-            <label for="nom" class="requis">Nom</label>
-            <div >
-                <input type="text" class="textfield" id="nom" autofocus placeholder="..." required>
-            </div>
-            <div class="form-footer">
-                <div >
-                    <input type="button" class="close-popup" popup_to_close="p_nom_visiteur" value="Annuler">
-                    <input type="button" value="suivant" class="open-popup close-popup" popup_to_close="p_nom_visiteur" popup_to_open="p_form_visite" >
-                </div>
-            </div>
-        </form>
-    </div>
     <div class="popup-back" popup_id="p_form_visite">
         <form action="" class="popup-form">
-            <button type="button"><img src="../../../image/button/bouton-retour.png" alt="retour" class="open-popup close-popup" popup_to_close="p_form_visite" popup_to_open="p_nom_visiteur" ></button>
+            <div class="relative">
+                <button type="button"><img src="../../../image/button/fermer-la-croix.png" alt="fermer" class="close-popup absolute right-0 top-0 w-4 h-4"  popup_to_close="p_form_visite" ></button>
+            </div>
             <div class="form-header">
                 <h2> SEED RECEPTION</h2>
-                <br>
                 <h3>Ajouter une visite</h3>
             </div>
-            <label for="nom" class="requis">Nom</label>
+            <label for="nom" class="requis">Nom employer</label>
             <div >
                 <input type="text" class="textfield" id="nom" autofocus placeholder="..." required>
             </div>
-            <label for="prenom">Prenom</label>
+            <label for="raison">Raison</label>
             <div >
                 <input type="text" class="textfield" placeholder="...">
             </div>
-            <label for="cni" class="requis">Numero CNI</label>
+            <label for="date" class="requis">Date</label>
             <div>
-                <input type="text" class="textfield" id="cni" placeholder="..." required>
+                <input type="date" class="textfield" id="cni" placeholder="..." required>
             </div>
-            <label for="Tel" class="requis">Telphone</label>
+            <label for="hd" class="requis">Heure de debut</label>
             <div>
                 <input type="number" id="tel"class="textfield"  placeholder="..." required>
             </div>
-            <label for="email">Email</label>
+            <label for="hf" class="requis">Heure de fin</label>
             <div >
-                <input type="Email" class="textfield" placeholder="...">
+                <input type="text" class="textfield" placeholder="...">
             </div>
 
             <div class="form-footer">

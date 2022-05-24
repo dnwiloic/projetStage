@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
-
+@tailwind variants;
 *
 {
     box-sizing: border-box;
@@ -27,8 +27,7 @@ input:focus
 
 .form-footer
 {
-    @apply mt-5;
-    height: 20px;
+    @apply flex items-center justify-between my-4 float-right;  
 }
 
 .textfield
@@ -41,7 +40,8 @@ input:focus
 }
 input.textfield
 {
-    width: 98%;
+    
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none ;
 }
 
 .textfield>label
@@ -63,10 +63,10 @@ input.textfield
 }
 
 .form-footer>div input[value="Annuler"]{
-    @apply rounded-xl bg-red-500 text-white /*relative left-2 z-10*/ p-2 ;
+    @apply rounded bg-red-500  hover:bg-red-600 text-white font-bold /*relative left-2 z-10*/ p-2 ;
 }
 .form-footer>div input[value="suivant"], .form-footer>div input[type="submit"]{
-    @apply rounded-xl bg-blue-500 text-white /*relative -left-2*/ p-2 ;
+    @apply rounded bg-blue-500 hover:bg-blue-700 text-white font-bold /*relative -left-2*/ p-2 ;
 
 }
 
@@ -144,6 +144,7 @@ a
     display: none;
     transition: all 0.5s;
     overflow: scroll;
+    /* @apply flex; */
 }
 
 .popup-back.active
@@ -153,12 +154,26 @@ a
 
 .popup-form
 {
-    width: 30%;
+    width: 50%;
     margin:auto;
     margin-top: 3%;
-    @apply bg-white rounded-3xl p-8;
+    @apply bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4;
 }
 
+.popup-form h2
+{
+    @apply mb-2 text-center text-blue-500 font-bold  text-xl;
+}
+
+.popup-form h3
+{
+    @apply text-center text-lg;
+}
+
+.popup-form label
+{
+    @apply block text-gray-700 text-sm font-bold mb-2;
+}
 .grid-1l
 {
     @apply grid grid-rows-1 grid-flow-col gap-4; 
@@ -171,10 +186,12 @@ a
 
 
 /* MENU+NAVBAR */
+@layer utilities {
 body{
     /* position: relative; */
-    height: 100%;
-    width: 100%;
+   
+    @apply min-h-screen w-screen;
+}
 }
 #barre{
     background-color: #77b5fe;
