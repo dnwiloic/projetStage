@@ -159,3 +159,49 @@ a
     @apply bg-white rounded-3xl p-8;
 }
 
+.grid-1l
+{
+    @apply grid grid-rows-1 grid-flow-col gap-4; 
+}
+
+#grid-recap>div
+{
+    @apply  rounded-lg ring-1 ring-indigo-900 border-teal-400 p-2 m-3;
+}
+
+
+/* MENU+NAVBAR */
+body{
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+}
+#barre{
+    background-color: #77b5fe;
+    position: fixed;
+    width: 100%;
+}
+p{
+    color: rgb(173, 149, 117);
+}
+#menu{
+    margin-left: 7px;
+    margin-top: 5%;
+    width: 50%;
+    height: 100%;
+    /* border-color: red 2px; */
+    position: fixed;
+    /* overflow: scroll; */
+}
+#lien{
+    margin-left: 8px;
+}
+#off{
+    border-color: red;
+    left: 2%; 
+}
+
+#menu a 
+{
+    @apply text-black;
+}

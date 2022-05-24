@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../dist/style.css">
-    <title>seed reception</title>
+    <title>Ouvrages</title>
 </head>
 <body>
     <div class="list">
     
-        <h1 class="titre-tableau"> Liste des entrées d'argent </h1>
+        <h1 class="titre-tableau"> Liste des abonnes</h1>
 
-        <button class="open-popup btn-ajouter" popup_to_open="p_form_ea">Ajouter</button>
+        <button class="open-popup btn-ajouter" popup_to_open="p_form_visiteur">Ajouter</button>
         <div>
             <span >nombre d'elements: </span>
         </div> 
@@ -23,6 +23,7 @@
                 <th>N CNI</th>
                 <th>Telephone</th>
                 <th>Email</th>
+                <th>Somme Verse</th>
                 <th>Actions</th>
             </tr>
             <tr>
@@ -32,13 +33,6 @@
                 <td>...</td>
                 <td>...</td>
                 <td>...</td>
-            </tr>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
                 <td>...</td>
             </tr>
             <tr>
@@ -48,8 +42,19 @@
                 <td>...</td>
                 <td>...</td>
                 <td>...</td>
+                <td>...</td>
             </tr>
             <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
                 <td>...</td>
                 <td>...</td>
                 <td>...</td>
@@ -58,37 +63,45 @@
                 <td>...</td>
             </tr>
         </table>
-        <button class="btn-ajouter">Aller aux recapitulatifs</button>
     </div>
-    <div class="popup-back" popup_id="p_form_ea">
+    <div class="popup-back" popup_id="p_form_visiteur">
         <form action="" class="popup-form">
             <div class="form-header">
                 <h2> SEED RECEPTION</h2>
                 <br>
-                <h3>Enregistrer une entrée d'argent </h3>
+                <h3>Ajouter un abonne</h3>
             </div>
-            <label for="Emp" class="requis">Employé</label>
+            <label for="nom" class="requis">Nom</label>
             <div >
-                <input type="text" class="textfield" id="emp" placeholder="..." required>
+                <input type="text" class="textfield" id="nom" placeholder="..." required>
             </div>
-            <label for="date" class="requis">date</label>
+            <label for="prenom">Prenom</label>
             <div >
-                <input type="date" class="textfield" required>
+                <input type="text" class="textfield" placeholder="...">
             </div>
-            <label for="montant" class="requis">Montant</label>
+            <label for="cni" class="requis">Numero CNI</label>
             <div>
-                <input type="nimber" class="textfield" id="montant" step="100" placeholder="..." required>
+                <input type="text" class="textfield" id="cni" placeholder="..." required>
             </div>
-            <label for="motif" class="requis">Motif</label>
+            <label for="Tel" class="requis">Telphone</label>
+            <div>
+                <input type="number" id="tel"class="textfield"  placeholder="..." required>
+            </div>
+            <label for="email">Email</label>
             <div >
-                <input type="number" id="motif" class="textfield" placeholder="..." required>
+                <input type="Email" class="textfield" placeholder="...">
+            </div>
+            <label for="email">Montant Verse</label>
+            <div >
+                <input type="Email" class="textfield" placeholder="...">
             </div>
 
             <div class="form-footer">
                 <div>
-                    <input type="button" class="close-popup" popup_to_close="p_form_ea" value="Annuler">
+                    <input type="button" class="close-popup" popup_to_close="p_form_visiteur" value="Annuler">
                     <input type="submit" value="Ajouter">
                 </div>
+                
             </div>
             
         </form>
