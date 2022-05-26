@@ -11,7 +11,7 @@ class visiteurModel extends Model
 
     protected $useAutoIncrement = true;
 
-    protected $returnType     = 'object';
+    protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
     protected $allowedFields = ['id','nom','prenom','CNI','tel'];
@@ -25,4 +25,9 @@ class visiteurModel extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
+    public function get_attr_of($id,$attr)
+    {
+        $elt=$this->find($id);
+        return $elt[$attr];
+    }
 }

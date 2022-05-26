@@ -11,7 +11,7 @@ class employerModel extends Model
 
     protected $useAutoIncrement = true;
 
-    protected $returnType     = 'object';
+    protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
     protected $allowedFields = ['login', 'password'];
@@ -40,5 +40,11 @@ class employerModel extends Model
         }
         
         return true;
+    }
+
+    public function get_attr_of($id,$attr)
+    {
+        $elt=$this->find($id);
+        return $elt[$attr];
     }
 }

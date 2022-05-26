@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style/dist/style.css">
     <title>Ouvrages</title>
 </head>
 <body class=" ">
     <div class="list">
     
         <h1 class="titre-tableau"> Liste des visiteurs</h1>
-
-        <button class="open-popup btn-ajouter" popup_to_open="p_form_visiteur">Ajouter</button>
+        
         <div>
             <span >nombre d'elements: </span>
         </div> 
@@ -31,7 +30,7 @@
                         <td><?php echo "$visiteur->nom $visiteur->prenom";?></td>
                         <td><?php echo "$visiteur->CNI";?></td>
                         <td><?php echo "$visiteur->tel";?></td>
-                        <td><a href="<?=base_url();?>/connexion">connexion</a></td>
+                        <td><a href='<?=base_url();?>/connexion/'>connexion</a></td>
                     </tr>
             <?php
                 }

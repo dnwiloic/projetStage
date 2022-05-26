@@ -331,3 +331,30 @@ CRITICAL - 2022-05-26 05:39:50 --> Call to undefined function App\Controllers\lo
 #3 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
 #5 {main}
+CRITICAL - 2022-05-26 05:53:02 --> Cannot use object of type stdClass as array
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_visiteur', Array, true)
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visiteur.php(14): view('liste_visiteur', Array)
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visiteur->index()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#9 {main}
+CRITICAL - 2022-05-26 06:10:01 --> Cannot use object of type stdClass as array
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(21): App\Models\employerModel->verify_user('loic', '3c91f63f8f292d1...')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-05-26 06:10:05 --> Cannot use object of type stdClass as array
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(21): App\Models\employerModel->verify_user('loic', '3c91f63f8f292d1...')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
