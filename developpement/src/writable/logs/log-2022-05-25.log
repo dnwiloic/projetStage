@@ -1,0 +1,465 @@
+ERROR - 2022-05-25 11:07:40 --> Erreur de syntaxe près de 'AND password=da39a3ee5e6b4b0d3255bfef95601890afd80709' à la ligne 1
+ERROR - 2022-05-25 11:08:02 --> Champ 'loic' inconnu dans where clause
+ERROR - 2022-05-25 11:08:17 --> Champ 'loic' inconnu dans where clause
+ERROR - 2022-05-25 11:09:25 --> Champ 'loic' inconnu dans where clause
+ERROR - 2022-05-25 11:24:47 --> Champ 'loic' inconnu dans where clause
+ERROR - 2022-05-25 11:26:13 --> Champ 'loic' inconnu dans where clause
+CRITICAL - 2022-05-25 11:33:31 --> syntax error, unexpected 'l' (T_STRING)
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\p...')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\empl...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\empl...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(16): spl_autoload_call('App\\Models\\empl...')
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#9 {main}
+CRITICAL - 2022-05-25 11:33:40 --> syntax error, unexpected 'l' (T_STRING)
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\p...')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\empl...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\empl...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(16): spl_autoload_call('App\\Models\\empl...')
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#9 {main}
+CRITICAL - 2022-05-25 12:02:40 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:42 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:42 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:42 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:43 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:43 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:43 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:43 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:43 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:44 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:44 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:44 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:44 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:44 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:45 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:45 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:45 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:45 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:45 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:46 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:02:46 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:03:17 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:03:26 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:03:54 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:03:55 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:03:55 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:03:56 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:04:16 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:04:17 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:04:17 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:04:17 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:04:17 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:04:17 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:04:18 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:04:18 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:04:18 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:04:18 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:04:18 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:04:18 --> syntax error, unexpected end of file
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(12): view('connexionView')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:08:41 --> Invalid file: connexionView?error=login or password invalid .php
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('connexionView?e...')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('connexionView?e...', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(28): view('connexionView?e...')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
+CRITICAL - 2022-05-25 12:33:26 --> visite route cannot be found while reverse-routing.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Helpers\url_helper.php(538): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('visite')
+#1 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(24): url_to('visite')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion('connexion', 'connexion', 'connexion', 'connexion')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#7 {main}
+CRITICAL - 2022-05-25 12:33:29 --> visite route cannot be found while reverse-routing.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Helpers\url_helper.php(538): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('visite')
+#1 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(24): url_to('visite')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion('connexion', 'connexion', 'connexion', 'connexion')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#7 {main}
+CRITICAL - 2022-05-25 12:33:49 --> visite/ route cannot be found while reverse-routing.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Helpers\url_helper.php(538): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('visite/')
+#1 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(24): url_to('visite/')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion('connexion', 'connexion', 'connexion', 'connexion')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#7 {main}
+CRITICAL - 2022-05-25 12:48:14 --> Invalid file: visite/.php
+#0 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visite/.php')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('visite/', Array, true)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Connexion.php(23): view('visite/')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion('connexion', 'connexion', 'connexion', 'connexion')
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#8 {main}
