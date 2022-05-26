@@ -11,7 +11,7 @@
     <div class="list">
     
         <h1 class="titre-tableau"> Liste des visiteurs</h1>
-        
+        <button class="open-popup btn-ajouter" popup_to_open="p_form_visiteur">Ajouter</button>
         <div>
             <span >nombre d'elements: </span>
         </div> 
@@ -27,9 +27,9 @@
                 {
                     ?>
                     <tr>
-                        <td><?php echo "$visiteur->nom $visiteur->prenom";?></td>
-                        <td><?php echo "$visiteur->CNI";?></td>
-                        <td><?php echo "$visiteur->tel";?></td>
+                        <td><?php echo $visiteur['nom']." ".$visiteur['prenom'];?></td>
+                        <td><?php echo $visiteur['CNI'];?></td>
+                        <td><?php echo $visiteur['tel'];?></td>
                         <td><a href='<?=base_url();?>/connexion/'>connexion</a></td>
                     </tr>
             <?php
@@ -74,7 +74,7 @@
         </form>
     </div>
 
-    <script src="../../popup.js"></script>
+    <script src="assets/script/popup.js"></script>
 </body>
 </html>
 
