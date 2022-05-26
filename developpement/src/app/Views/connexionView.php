@@ -32,7 +32,7 @@
         </div>
     </form> -->
     <div class="flex flex-col justify-center items-center w-screen basis-full min-h-screen">
-        <form action="connexion/" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <form action="<?=base_url();?>/connexion/connexion" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <h1 class="mb-2 text-center text-blue-500 font-bold  text-xl"> SEED RECEPTION</h1>
             <h3 class="text-center text-lg">Connexion</h3>
 

@@ -33,11 +33,20 @@
                     <tr>
                         <td><?php echo $visite['visiteur'];?></td>
                         <td><?php echo $visite['employer'];?></td>
-                        <td><?php echo $visite['rason'];?></td>
+                        <td><?php echo $visite['raison'];?></td>
                         <td><?php echo $visite['date'];?></td>
                         <td><?php echo $visite['heure_debut'];?></td>
                         <td><?php echo $visite['heure_fin'];?></td>
-                        <td><a href='<?=base_url();?>/connexion/'>connexion</a></td>
+                        <td>
+                            <?php
+                            if($visite['heure_fin']=="") 
+                            {
+                                ?>
+                                <a href='<?=base_url();?>fin/'>fini</a>
+                                <?php
+                            }
+                            ?>
+                        </td>
                     </tr>
             <?php
                 }
@@ -47,7 +56,7 @@
     <div class="popup-back" popup_id="p_form_visite">
         <form action="" class="popup-form">
             <div class="relative">
-                <button type="button"><img src="../../../image/button/fermer-la-croix.png" alt="fermer" class="close-popup absolute right-0 top-0 w-4 h-4"  popup_to_close="p_form_visite" ></button>
+                <button type="button"><img src="assets/image/button/fermer-la-croix.png" alt="fermer" class="close-popup absolute right-0 top-0 w-4 h-4"  popup_to_close="p_form_visite" ></button>
             </div>
             <div class="form-header">
                 <h2> SEED RECEPTION</h2>
@@ -83,7 +92,7 @@
                     <input type="time" id="tel"class="textfield"  placeholder="..." required>
                 </div>
                 <div>
-                    <label for="hf" class="requis">Heure de fin</label>
+                    <label for="hf">Heure de fin</label>
                     <input type="time" class="textfield" placeholder="...">
                 </div>
             </div>
