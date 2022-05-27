@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 26 mai 2022 à 07:30
+-- Généré le : jeu. 26 mai 2022 à 13:59
 -- Version du serveur : 8.0.27
 -- Version de PHP : 7.4.26
 
@@ -61,7 +61,14 @@ CREATE TABLE IF NOT EXISTS `visite` (
   PRIMARY KEY (`id`),
   KEY `id_employer` (`id_employer`),
   KEY `id_visiteur` (`id_visiteur`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `visite`
+--
+
+INSERT INTO `visite` (`id`, `id_visiteur`, `id_employer`, `date`, `heure_debut`, `heure_fin`, `raison`) VALUES
+(1, 1, 1, '2022-05-26', '13:15:39', '00:00:00', 'travail');
 
 -- --------------------------------------------------------
 
@@ -79,7 +86,14 @@ CREATE TABLE IF NOT EXISTS `visiteur` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `tel` (`tel`),
   UNIQUE KEY `CNI` (`CNI`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `visiteur`
+--
+
+INSERT INTO `visiteur` (`id`, `nom`, `prenom`, `CNI`, `tel`) VALUES
+(1, 'Dnjomou', 'loic', 'weedwererfer', 651027093);
 
 --
 -- Contraintes pour les tables déchargées

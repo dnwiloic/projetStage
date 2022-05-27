@@ -600,3 +600,247 @@ CRITICAL - 2022-05-26 08:14:08 --> syntax error, unexpected end of file
 #6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
 #8 {main}
+CRITICAL - 2022-05-26 11:03:35 --> number is not a valid rule.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('number')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('tel', 'tel', '1523', Array, Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(43): CodeIgniter\Controller->validate(Array)
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#9 {main}
+CRITICAL - 2022-05-26 11:04:11 --> Call to undefined method App\Models\visiteModel::get_id
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(48): CodeIgniter\Model->__call('get_id', Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+ERROR - 2022-05-26 11:04:14 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+CRITICAL - 2022-05-26 11:04:14 --> Call to undefined method App\Models\visiteModel::get_id
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(48): CodeIgniter\Model->__call('get_id', Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+ERROR - 2022-05-26 11:05:04 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:05:04 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_1` FOREIGN KEY (`id_employer`) REFERENCES `employer` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-05-26 11:05:35 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+CRITICAL - 2022-05-26 11:06:36 --> number is not a valid rule.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('number')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('tel', 'tel', '1523', Array, Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(43): CodeIgniter\Controller->validate(Array)
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#9 {main}
+ERROR - 2022-05-26 11:06:56 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+CRITICAL - 2022-05-26 11:07:16 --> number is not a valid rule.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('number')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('tel', 'tel', '1523', Array, Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(43): CodeIgniter\Controller->validate(Array)
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#9 {main}
+CRITICAL - 2022-05-26 11:07:56 --> valid_number is not a valid rule.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('valid_number')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('tel', 'tel', '1523', Array, Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(43): CodeIgniter\Controller->validate(Array)
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#9 {main}
+CRITICAL - 2022-05-26 11:08:27 --> valid_int is not a valid rule.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('valid_int')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('tel', 'tel', '1523', Array, Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(43): CodeIgniter\Controller->validate(Array)
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#9 {main}
+CRITICAL - 2022-05-26 11:08:37 --> int is not a valid rule.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('int')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('tel', 'tel', '1523', Array, Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(43): CodeIgniter\Controller->validate(Array)
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#9 {main}
+CRITICAL - 2022-05-26 11:08:58 --> valid_time is not a valid rule.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('valid_time')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('hd', 'hd', '17:00', Array, Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(43): CodeIgniter\Controller->validate(Array)
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#9 {main}
+CRITICAL - 2022-05-26 11:09:01 --> valid_time is not a valid rule.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('valid_time')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('hd', 'hd', '17:00', Array, Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(43): CodeIgniter\Controller->validate(Array)
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#9 {main}
+ERROR - 2022-05-26 11:09:33 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+CRITICAL - 2022-05-26 11:09:45 --> valid_time is not a valid rule.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('valid_time')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('hd', 'hd', '17:00', Array, Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(43): CodeIgniter\Controller->validate(Array)
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#9 {main}
+CRITICAL - 2022-05-26 11:09:55 --> time() expects exactly 0 parameters, 1 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'time() expects ...', 'C:\\wamp64\\www\\p...', 279, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(279): time('17:00')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('hd', 'hd', '17:00', Array, Array)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(43): CodeIgniter\Controller->validate(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-05-26 11:10:05 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:10:56 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+CRITICAL - 2022-05-26 11:10:56 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(55): App\Models\visiteurModel->get_id(Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+ERROR - 2022-05-26 11:11:30 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+CRITICAL - 2022-05-26 11:11:30 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(55): App\Models\visiteurModel->get_id(Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-05-26 11:11:58 --> syntax error, unexpected 'return' (T_RETURN)
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\p...')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\visi...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\visi...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(36): spl_autoload_call('App\\Models\\visi...')
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#9 {main}
+ERROR - 2022-05-26 11:12:13 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+CRITICAL - 2022-05-26 11:12:13 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(55): App\Models\visiteurModel->get_id(Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+ERROR - 2022-05-26 11:12:19 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+CRITICAL - 2022-05-26 11:12:19 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(55): App\Models\visiteurModel->get_id(Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->ajouter()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+ERROR - 2022-05-26 11:12:32 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:13:13 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:13:51 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:14:01 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:14:13 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:15:30 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:15:44 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:16:03 --> Duplicata du champ '1523' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:26:16 --> Duplicata du champ '55' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:33:07 --> Duplicata du champ '55' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:34:47 --> Duplicata du champ '55' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:36:02 --> Duplicata du champ '55' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:36:22 --> Duplicata du champ '55' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:37:00 --> Duplicata du champ '55' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 11:38:10 --> Duplicata du champ '55' pour la clef 'visiteur.tel'
+ERROR - 2022-05-26 21:40:26 --> Error connecting to the database: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+CRITICAL - 2022-05-26 21:40:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(18): CodeIgniter\BaseModel->findAll()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-05-26 21:40:41 --> Error connecting to the database: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+CRITICAL - 2022-05-26 21:40:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(18): CodeIgniter\BaseModel->findAll()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-05-26 21:40:45 --> Error connecting to the database: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+CRITICAL - 2022-05-26 21:40:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visite.php(18): CodeIgniter\BaseModel->findAll()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visite->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visite))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}

@@ -15,6 +15,12 @@ open_modals.forEach( btn=>{btn.addEventListener('click', fActivePopup )}) ;
 close_modals.forEach ( close=>{
     close.addEventListener('click',function(event){
         document.querySelector(" div[popup_id='"+event.target.getAttribute("popup_to_close")+"']").classList.remove("active");
+        inputs=document.querySelectorAll('input');
+            inputs.forEach(input=>{
+                    if(input.id!='hf'){input.removeAttribute("disabled")}
+                })
+            let raison=document.getElementById("raison");
+            raison.removeAttribute("disabled");
     });
 });
 

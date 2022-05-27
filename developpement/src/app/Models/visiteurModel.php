@@ -30,4 +30,10 @@ class visiteurModel extends Model
         $elt=$this->find($id);
         return $elt[$attr];
     }
+
+    public function get_id($vst)
+    {
+        $rst=$this->db->query('SELECT id FROM visiteur WHERE tel='.$vst['tel']);
+        return($rst->getResult()[0]->id);
+    }
 }

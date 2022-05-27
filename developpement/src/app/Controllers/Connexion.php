@@ -20,7 +20,7 @@ class Connexion extends BaseController
         {
             if( $modelEmployer->verify_user($_POST["login"],sha1($_POST["password"]) ) )
             {
-             echo "valid";
+                return redirect()->to(base_url('visite'));
             }
             else
             {

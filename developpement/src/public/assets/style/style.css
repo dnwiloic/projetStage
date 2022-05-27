@@ -62,10 +62,10 @@ input.textfield
     
 }
 
-.form-footer>div input[value="Annuler"]{
+button[value="Annuler"]{
     @apply rounded bg-red-500  hover:bg-red-600 text-white font-bold /*relative left-2 z-10*/ p-2 ;
 }
-.form-footer>div input[value="suivant"], .form-footer>div input[type="submit"]{
+.form-footer>div input[value="suivant"],button[type="submit"]{
     @apply rounded bg-blue-500 hover:bg-blue-600 text-white font-bold /*relative -left-2*/ p-2 ;
 
 }
