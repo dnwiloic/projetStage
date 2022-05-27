@@ -20,6 +20,7 @@ class Visite extends BaseController
         foreach($visites as $visite)
         {
             $toShow['id']=$visite->id;
+            $toShow['id_visiteur']=$visite->id_visiteur;
             $toShow['employer']=$empModel->get_attr_of((int)$visite->id_employer,"login");
             $toShow['visiteur']=$visiteurModel->get_attr_of((int)$visite->id_visiteur,"nom")." ".$visiteurModel->get_attr_of((int)$visite->id_visiteur,"prenom");
             $toShow['nom']=$visiteurModel->get_attr_of((int)$visite->id_visiteur,"nom");
@@ -42,7 +43,6 @@ class Visite extends BaseController
         if( isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['cni']) && isset($_POST['tel']) &&
         isset($_POST['date']) && isset($_POST['hd']) && isset($_POST['raison']) )
         {
-            echo "ajouterrrrrr";
            if( $this->validate([
             'nom'=>'required',
             'prenom'=>'required',
@@ -53,12 +53,18 @@ class Visite extends BaseController
             ])  )
             {
                 $visiteur=['nom'=>$_POST['nom'],'prenom'=>$_POST['prenom'], 'CNI'=>$_POST['cni'], 'tel'=>(int)$_POST['tel'] ];
-                $visiteurModel->save($visiteur);
+                var_dump($visiteurModel->save($visiteur)) ;
+                var_dump($visiteur) ;
                 //recuperation de l'id du visiteur que l'ont vient d'enregistrer et ajout de la visite
                 $visite=['date'=>$_POST['date'],'heure_debut'=>$_POST['hd'], 'raison'=>$_POST['raison'], 'id_visiteur'=>(int)$visiteurModel->get_id($visiteur),'id_employer'=>1 ];
-                $visiteModel->save($visite);
+                var_dump($visiteModel->save($visite));
                 echo "ajouterrrrrr";
             }
+        }
+        else if(isset($_POST['visiteur']) && isset($_POST['date']) && isset($_POST['hd']) && isset($_POST['raison']) )
+        {
+            $visite=['date'=>$_POST['date'],'heure_debut'=>$_POST['hd'], 'raison'=>$_POST['raison'], 'id_visiteur'=>(int)$_POST['visiteur'],'id_employer'=>1 ];
+                var_dump($visiteModel->save($visite));
         }
         else if( isset($_POST['hf'] ) && isset($_POST['idv'] ) )
         {

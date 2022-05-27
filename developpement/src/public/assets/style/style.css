@@ -93,9 +93,7 @@ a
 
 .list
 {
-    width: 94%;
-    margin: auto;
-    position: relative;
+    width: 95%;
 }
 
 .list>table
@@ -117,14 +115,12 @@ a
 
 .titre-tableau
 {
-    text-align: center;
+    @apply text-2xl italic block border-l-8 w-fit pl-2 my-12 font-bold ;
 }
 
 .btn-ajouter
 {
-    position: absolute;
-    right: 0px;
-    @apply p-2 text-white bg-blue-600 rounded-lg transition-all duration-200;
+    @apply p-2 text-white float-right bg-blue-600 rounded-lg transition-all duration-200;
 }
 
 .btn-ajouter:hover

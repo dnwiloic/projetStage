@@ -15,7 +15,7 @@ open_modals.forEach( btn=>{btn.addEventListener('click', fActivePopup )}) ;
 close_modals.forEach ( close=>{
     close.addEventListener('click',function(event){
         document.querySelector(" div[popup_id='"+event.target.getAttribute("popup_to_close")+"']").classList.remove("active");
-        inputs=document.querySelectorAll('input');
+        inputs=document.querySelectorAll('input,#visiteur');
             inputs.forEach(input=>{
                     if(input.id!='hf'){input.removeAttribute("disabled")}
                 })
@@ -26,6 +26,12 @@ close_modals.forEach ( close=>{
 
 popup_backs.forEach( back=>{back.addEventListener('click', function(event){
     event.target.classList.remove("active");
+    inputs=document.querySelectorAll('input,#visiteur');
+            inputs.forEach(input=>{
+                    if(input.id!='hf'){input.removeAttribute("disabled")}
+                })
+            let raison=document.getElementById("raison");
+            raison.removeAttribute("disabled");
 })
 }
 );

@@ -15,3 +15,27 @@ CRITICAL - 2022-05-27 00:25:01 --> Illegal offset type
 #4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
 #6 {main}
+ERROR - 2022-05-27 01:38:21 --> Duplicata du champ 'trois' pour la clef 'visiteur.CNI'
+ERROR - 2022-05-27 01:38:21 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-05-27 01:40:24 --> Duplicata du champ 'trois' pour la clef 'visiteur.CNI'
+ERROR - 2022-05-27 01:40:24 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-05-27 01:41:14 --> Duplicata du champ 'trois' pour la clef 'visiteur.CNI'
+ERROR - 2022-05-27 01:41:14 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-05-27 01:43:51 --> Duplicata du champ 'trois' pour la clef 'visiteur.CNI'
+ERROR - 2022-05-27 01:43:51 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-05-27 01:43:55 --> Duplicata du champ 'trois' pour la clef 'visiteur.CNI'
+ERROR - 2022-05-27 01:43:56 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-05-27 01:44:19 --> Duplicata du champ 'trois' pour la clef 'visiteur.CNI'
+ERROR - 2022-05-27 01:44:20 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-05-27 01:44:46 --> Duplicata du champ 'trois' pour la clef 'visiteur.CNI'
+ERROR - 2022-05-27 01:44:46 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-05-27 01:45:16 --> Duplicata du champ 'trois' pour la clef 'visiteur.CNI'
+ERROR - 2022-05-27 01:45:16 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-05-27 01:45:42 --> Duplicata du champ 'trois' pour la clef 'visiteur.CNI'
+ERROR - 2022-05-27 01:45:42 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-05-27 01:47:14 --> Duplicata du champ 'trois' pour la clef 'visiteur.CNI'
+ERROR - 2022-05-27 01:47:14 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-05-27 01:49:13 --> Duplicata du champ 'trois' pour la clef 'visiteur.CNI'
+ERROR - 2022-05-27 01:49:13 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-05-27 03:07:17 --> Duplicata du champ 'trois' pour la clef 'visiteur.CNI'
+ERROR - 2022-05-27 03:07:17 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
