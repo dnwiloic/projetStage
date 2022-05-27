@@ -25,26 +25,24 @@ class employerModel extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
-    public function verify_user($login,$password)
+    public function verify_user($login, $password)
     {
-        $result=$this->db->query("SELECT id , login FROM employer WHERE login='$login' AND password='$password'");
-        $ids=$result->getResult();
-        if(empty($ids))
-        {
+        $result = $this->db->query("SELECT id , login FROM employer WHERE login='$login' AND password='$password'");
+        $ids = $result->getResult();
+        if (empty($ids)) {
             return false;
         }
 
-        foreach($ids as $id )
-        {
-            echo "$id->login";
+        foreach ($ids as $id) {
+            // echo "$id->login";
         }
-        
+
         return true;
     }
 
-    public function get_attr_of($id,$attr)
+    public function get_attr_of($id, $attr)
     {
-        $elt=$this->find($id);
+        $elt = $this->find($id);
         return $elt[$attr];
     }
 }

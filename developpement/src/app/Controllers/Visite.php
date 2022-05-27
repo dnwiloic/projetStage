@@ -10,13 +10,12 @@ class Visite extends BaseController
 {
     public function index()
     {
-        $visiteModel=new visiteModel();
-        $empModel=new employerModel();
-        $visiteurModel=new visiteurModel();
-        $tab=array();
-        $toShow=array();
-        $visites=$visiteModel->findAll();
-
+        $visiteModel = new visiteModel();
+        $empModel = new employerModel();
+        $visiteurModel = new visiteurModel();
+        $tab = array();
+        $toShow = array();
+        $visites = $visiteModel->findAll();
         foreach($visites as $visite)
         {
             $toShow['id']=$visite->id;
@@ -33,7 +32,7 @@ class Visite extends BaseController
             $toShow['raison']=$visite->raison;
             array_push($tab, $toShow );
         }
-        return view('liste_visite',['visites'=>$tab]);
+        return view('listeVisiteView', ['visites' => $tab]);
     }
 
     public function ajouter()
@@ -77,3 +76,4 @@ class Visite extends BaseController
         return redirect()->to(base_url('visite'));
     }
 }
+

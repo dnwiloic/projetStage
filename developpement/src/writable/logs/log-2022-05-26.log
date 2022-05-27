@@ -600,6 +600,7 @@ CRITICAL - 2022-05-26 08:14:08 --> syntax error, unexpected end of file
 #6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
 #8 {main}
+<<<<<<< HEAD
 CRITICAL - 2022-05-26 11:03:35 --> number is not a valid rule.
 #0 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('number')
 #1 C:\wamp64\www\projet_stage\developpement\src\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('tel', 'tel', '1523', Array, Array)
@@ -844,3 +845,259 @@ Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordin
 #8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
 #10 {main}
+=======
+CRITICAL - 2022-05-26 08:33:41 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\projetStage\developpement\src\app\Views\liste_visite.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_visite', Array, true)
+#4 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(21): view('liste_visite')
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#6 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-26 08:34:53 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\projetStage\developpement\src\app\Views\liste_visite.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_visite', Array, true)
+#4 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(12): view('liste_visite')
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#6 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-26 08:34:57 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\projetStage\developpement\src\app\Views\liste_visite.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_visite', Array, true)
+#4 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(12): view('liste_visite')
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#6 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-26 08:36:09 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\projetStage\developpement\src\app\Views\listeVisiteView.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('listeVisiteView', Array, true)
+#4 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(12): view('listeVisiteView')
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#6 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-26 08:37:49 --> Invalid file: visite.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visite.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('visite', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(21): view('visite')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 08:38:21 --> Invalid file: visite.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visite.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('visite', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(21): view('visite')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 08:40:02 --> Invalid file: Visite.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Visite.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('Visite', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(21): view('Visite')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 08:43:17 --> Invalid file: Visite.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Visite.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('Visite', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(21): view('Visite')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 08:46:21 --> Call to a member function get() on null
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#2 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-26 08:54:16 --> Invalid file: visites.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visites.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('visites', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(21): view('visites')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 08:54:24 --> Invalid file: visite.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visite.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('visite', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(21): view('visite')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 09:02:37 --> Invalid file: visite.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visite.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('visite', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(21): view('visite')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 09:02:42 --> Invalid file: visite.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visite.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('visite', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(21): view('visite')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->connexion()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 09:02:55 --> Invalid file: visite.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visite.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('visite', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(12): view('visite')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 09:02:59 --> Invalid file: visites.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visites.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('visites', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(12): view('visites')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 09:03:06 --> Invalid file: /visites.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/visites.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('/visites', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(12): view('/visites')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 09:03:27 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\projetStage\developpement\src\app\Views\listeVisiteView.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('listeVisiteView', Array, true)
+#4 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(12): view('listeVisiteView')
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#6 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-26 09:03:33 --> Invalid file: visites/.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visites/.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('visites/', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(12): view('visites/')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 09:03:36 --> Invalid file: visites.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visites.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('visites', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(12): view('visites')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 09:03:58 --> Invalid file: Visite.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Visite.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('Visite', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(12): view('Visite')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 09:05:54 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(13): redirect('/visite', 'refresh')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 09:05:57 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(13): redirect('/visite', 'refresh')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 09:06:12 --> Call to a member function helper() on null
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#2 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-26 09:06:31 --> Invalid file: visites.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visites.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('visites', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(12): view('visites')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 09:15:56 --> Invalid file: visitestest.php
+#0 C:\xampp\htdocs\projetStage\developpement\src\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visitestest.php')
+#1 C:\xampp\htdocs\projetStage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('visitestest', Array, true)
+#2 C:\xampp\htdocs\projetStage\developpement\src\app\Controllers\Connexion.php(12): view('visitestest')
+#3 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Connexion->index()
+#4 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\xampp\htdocs\projetStage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\projetStage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\projetStage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+>>>>>>> a4d53debce355c98e228ebf5a81710f3af67eb27

@@ -39,3 +39,35 @@ ERROR - 2022-05-27 01:49:13 --> Duplicata du champ 'trois' pour la clef 'visiteu
 ERROR - 2022-05-27 01:49:13 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
 ERROR - 2022-05-27 03:07:17 --> Duplicata du champ 'trois' pour la clef 'visiteur.CNI'
 ERROR - 2022-05-27 03:07:17 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`visite`, CONSTRAINT `visite_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-05-27 15:55:38 --> Error connecting to the database: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+CRITICAL - 2022-05-27 15:55:38 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visiteur.php(12): CodeIgniter\BaseModel->findAll()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visiteur->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-05-27 15:55:43 --> Error connecting to the database: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+CRITICAL - 2022-05-27 15:55:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visiteur.php(12): CodeIgniter\BaseModel->findAll()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visiteur->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}

@@ -14,22 +14,13 @@ class Connexion extends BaseController
 
     public function connexion()
     {
-        $modelEmployer=new employerModel();
-
-        if(isset($_POST["login"]) && isset($_POST["password"]))
-        {
-            if( $modelEmployer->verify_user($_POST["login"],sha1($_POST["password"]) ) )
-            {
-                return redirect()->to(base_url('visite'));
+        $modelEmployer = new employerModel();
+        if (isset($_POST["login"]) && isset($_POST["password"])) {
+            if ($modelEmployer->verify_user($_POST["login"], sha1($_POST["password"]))) {
+                return redirect()->to(base_url('visites'));
+            } else {
+                return view("connexionView", array('error' => "invalid login or password"));
             }
-            else
-            {
-                return view("connexionView",array('error'=>"invalid login or password"));
-            }
-        }
-        else
-        {
-
         }
     }
 }
