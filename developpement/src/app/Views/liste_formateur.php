@@ -15,7 +15,7 @@ include_once("entete.php");
         </div>
         <div class="list col-span-6">
 
-            <h1 class="titre-tableau"> Liste des visiteurs </h1>
+            <h1 class="titre-tableau"> Liste des Enseignants </h1>
             <!-- <button class="open-popup btn-ajouter" popup_to_open="p_form_visiteur">Ajouter</button> -->
             <div>
                 <span>nombre d'elements: <span id="nbr_elt" class="text-blue-700"></span></span>

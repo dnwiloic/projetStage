@@ -32,7 +32,7 @@ class Visite extends BaseController
             $toShow['raison']=$visite->raison;
             array_push($tab, $toShow );
         }
-        return view('listeVisiteView', ['visites' => $tab]);
+        return view('liste_visite', ['visites' => $tab]);
     }
 
     public function ajouter()

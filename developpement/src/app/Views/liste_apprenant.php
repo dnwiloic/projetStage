@@ -15,14 +15,15 @@ include_once("entete.php");
         </div>
         <div class="list col-span-6">
 
-            <h1 class="titre-tableau"> Liste des visiteurs </h1>
-            <!-- <button class="open-popup btn-ajouter" popup_to_open="p_form_visiteur">Ajouter</button> -->
+            <h1 class="titre-tableau"> Liste des Apprenants </h1>
+            <button class="open-popup btn-ajouter" popup_to_open="p_form_visiteur">Ajouter</button>
             <div>
                 <span>nombre d'elements: <span id="nbr_elt" class="text-blue-700"></span></span>
             </div>
             <table>
                 <tr>
                     <th>Nom & prenom</th>
+                    <th>Matricule</th>
                     <th>N CNI</th>
                     <th>Telephone</th>
                     <th>Actions</th>
@@ -32,16 +33,17 @@ include_once("entete.php");
                 ?>
                     <tr>
                         <td><?php echo $visiteur['nom'] . " " . $visiteur['prenom']; ?></td>
+                        <td><?php echo $visiteur['matricule']; ?></td>
                         <td><?php echo $visiteur['CNI']; ?></td>
                         <td><?php echo $visiteur['tel']; ?></td>
-                        <td><a href='<?= base_url(); ?>/connexion/'>connexion</a></td>
+                        <td><a href='<?= base_url(); ?>/connexion/'></a></td>
                     </tr>
                 <?php
                 }
                 ?>
             </table>
         </div>
-        <!-- <div class="popup-back" popup_id="p_form_visiteur">
+        <div class="popup-back" popup_id="p_form_visiteur">
             <form action="" class="popup-form ">
                 <div class="form-header">
                     <h2> SEED RECEPTION</h2>
@@ -63,20 +65,16 @@ include_once("entete.php");
                 <div>
                     <input type="number" id="tel" class="textfield" placeholder="..." required>
                 </div>
-                <label for="email">Email</label>
-            <div >
-                <input type="Email" class="textfield" placeholder="...">
-            </div>
 
                 <div class="form-footer">
                     <div>
-                        <input type="button" class="close-popup" popup_to_close="p_form_visiteur" value="Annuler">
-                        <input type="submit" value="Ajouter">
+                        <button type="reset" class="close-popup" popup_to_close="p_form_visiteur" value="Annuler">Annuler</button>
+                        <button type="submit">Ajouter</button>
                     </div>
                 </div>
 
             </form>
-        </div> -->
+        </div> 
     </div>
 
     <script type="text/javascript">

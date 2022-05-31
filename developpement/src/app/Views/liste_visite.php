@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style/dist/style.css">
-    <script></script>
-    <title>Document</title>
-</head>
-
+<?php
+include_once("entete.php");
+?>
 <body>
     <script type="text/javascript">
         var tab_json = <?php print json_encode($visites) ?>;
@@ -131,7 +122,7 @@
                 <div class="form-footer">
                     <div>
                         <button type="reset" class="close-popup" popup_to_close="p_form_visite" value="Annuler">Annuler<button>
-                                <button type="submit" value="Ajouter">Ajouter</button>
+                        <button type="submit" value="Ajouter">Ajouter</button>
                     </div>
                 </div>
 
