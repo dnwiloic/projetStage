@@ -32,7 +32,7 @@ include_once("entete.php");
                 ?>
                     <tr>
                         <td><?php echo $visiteur['nom'] . " " . $visiteur['prenom']; ?></td>
-                        <td><?php echo $visiteur['CNI']; ?></td>
+                        <td><?php echo $visiteur['cni']; ?></td>
                         <td><?php echo $visiteur['tel']; ?></td>
                         <td><a href='<?= base_url(); ?>/connexion/'>connexion</a></td>
                     </tr>

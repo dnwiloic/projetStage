@@ -3,7 +3,7 @@ include_once("entete.php");
 ?>
 
 <body>
-<script type="text/javascript">
+    <script type="text/javascript">
         var tab_json = <?php print json_encode($tab_visiteurs) ?>;
         console.log(tab_json);
     </script>
@@ -16,7 +16,7 @@ include_once("entete.php");
         <div class="list col-span-6">
 
             <h1 class="titre-tableau"> Liste des Enseignants </h1>
-            <!-- <button class="open-popup btn-ajouter" popup_to_open="p_form_visiteur">Ajouter</button> -->
+            <button class="open-popup btn-ajouter" popup_to_open="p_form_visiteur">Ajouter</button>
             <div>
                 <span>nombre d'elements: <span id="nbr_elt" class="text-blue-700"></span></span>
             </div>
@@ -29,59 +29,60 @@ include_once("entete.php");
                 </tr>
                 <?php
                 foreach ($tab_visiteurs as $visiteur) {
+                    if (in_array($visiteur['id'], $tab_formt)) {
                 ?>
-                    <tr>
-                        <td><?php echo $visiteur['nom'] . " " . $visiteur['prenom']; ?></td>
-                        <td><?php echo $visiteur['CNI']; ?></td>
-                        <td><?php echo $visiteur['tel']; ?></td>
-                        <td><a href='<?= base_url(); ?>/connexion/'>connexion</a></td>
-                    </tr>
+                        <tr>
+                            <td><?php echo $visiteur['nom'] . " " . $visiteur['prenom']; ?></td>
+                            <td><?php echo $visiteur['cni']; ?></td>
+                            <td><?php echo $visiteur['tel']; ?></td>
+                            <td><a href='<?= base_url(); ?>/connexion/'>connexion</a></td>
+                        </tr>
                 <?php
+                    }
                 }
                 ?>
             </table>
         </div>
-        <!-- <div class="popup-back" popup_id="p_form_visiteur">
-            <form action="" class="popup-form ">
+        <div class="popup-back" popup_id="p_form_visiteur">
+            <form action="<?= base_url(); ?>/formateur/ajouter" method="POST" class="popup-form ">
                 <div class="form-header">
                     <h2> SEED RECEPTION</h2>
                     <h3>Ajouter un visiteur</h3>
                 </div>
+
+                <label for="visiteur" class="inline w-min m-0">Visiteur</label>
+                <select name="visiteur" id="visiteur" class="ring-1 rounded outlinee-none overflow-scroll focus:outline-0">
+
+                </select>
                 <label for="nom" class="requis">Nom</label>
                 <div>
-                    <input type="text" class="textfield" id="nom" autofocus placeholder="..." required>
+                    <input type="text" vst class="textfield" id="nom" name="nom" autofocus placeholder="..." required>
                 </div>
                 <label for="prenom">Prenom</label>
                 <div>
-                    <input type="text" class="textfield" placeholder="...">
+                    <input type="text" vst id="prenom" name="prenom" class="textfield" placeholder="...">
                 </div>
                 <label for="cni" class="requis">Numero CNI</label>
                 <div>
-                    <input type="text" class="textfield" id="cni" placeholder="..." required>
+                    <input type="text" vst class="textfield" id="cni" name="cni" placeholder="..." required>
                 </div>
                 <label for="Tel" class="requis">Telphone</label>
                 <div>
-                    <input type="number" id="tel" class="textfield" placeholder="..." required>
+                    <input type="number" vst id="tel" name="tel" class="textfield" placeholder="..." required>
                 </div>
-                <label for="email">Email</label>
-            <div >
-                <input type="Email" class="textfield" placeholder="...">
-            </div>
 
                 <div class="form-footer">
                     <div>
-                        <input type="button" class="close-popup" popup_to_close="p_form_visiteur" value="Annuler">
-                        <input type="submit" value="Ajouter">
+                        <button type="button" class="close-popup" popup_to_close="p_form_visiteur" value="Annuler">Annuler</button>
+                        <button type="submit" value="Ajouter">Ajouter</button>
                     </div>
                 </div>
 
             </form>
-        </div> -->
+        </div>
     </div>
 
-    <script type="text/javascript">
-        document.getElementById("nbr_elt").innerHTML=tab_json.length;
-    </script>
+    <script src="assets/script/visite.js"></script>
     <script src="assets/script/popup.js"></script>
 </body>
 

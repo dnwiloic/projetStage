@@ -24,7 +24,7 @@ class Visite extends BaseController
             $toShow['visiteur']=$visiteurModel->get_attr_of((int)$visite->id_visiteur,"nom")." ".$visiteurModel->get_attr_of((int)$visite->id_visiteur,"prenom");
             $toShow['nom']=$visiteurModel->get_attr_of((int)$visite->id_visiteur,"nom");
             $toShow['prenom']=$visiteurModel->get_attr_of((int)$visite->id_visiteur,"prenom");
-            $toShow['cni']=$visiteurModel->get_attr_of((int)$visite->id_visiteur,"CNI");
+            $toShow['cni']=$visiteurModel->get_attr_of((int)$visite->id_visiteur,"cni");
             $toShow['tel']=$visiteurModel->get_attr_of((int)$visite->id_visiteur,"tel");
             $toShow['date']=$visite->date;
             $toShow['heure_debut']=$visite->heure_debut;
@@ -51,13 +51,12 @@ class Visite extends BaseController
             'hd'=>'required'
             ])  )
             {
-                $visiteur=['nom'=>$_POST['nom'],'prenom'=>$_POST['prenom'], 'CNI'=>$_POST['cni'], 'tel'=>(int)$_POST['tel'] ];
+                $visiteur=['nom'=>$_POST['nom'],'prenom'=>$_POST['prenom'], 'cni'=>$_POST['cni'], 'tel'=>(int)$_POST['tel'] ];
                 var_dump($visiteurModel->save($visiteur)) ;
                 var_dump($visiteur) ;
                 //recuperation de l'id du visiteur que l'ont vient d'enregistrer et ajout de la visite
                 $visite=['date'=>$_POST['date'],'heure_debut'=>$_POST['hd'], 'raison'=>$_POST['raison'], 'id_visiteur'=>(int)$visiteurModel->get_id($visiteur),'id_employer'=>1 ];
                 var_dump($visiteModel->save($visite));
-                echo "ajouterrrrrr";
             }
         }
         else if(isset($_POST['visiteur']) && isset($_POST['date']) && isset($_POST['hd']) && isset($_POST['raison']) )

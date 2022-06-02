@@ -14,7 +14,7 @@ class visiteurModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['id','nom','prenom','CNI','tel'];
+    protected $allowedFields = ['id','nom','prenom','cni','tel'];
 
     protected $useTimestamps = false;
     protected $createdField  = '';

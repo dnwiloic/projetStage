@@ -1,9 +1,15 @@
-document.getElementById("nbr_elt").innerHTML=tab_json.length;
+document.getElementById("nbr_elt").innerHTML=(document.querySelectorAll(".list tr")).length-1;
 let select_visiteur=document.getElementById("visiteur");
 let select_chaine="<option value='-1'>Nouveau<?option>";
 // vst est un attribut que seul les entrer caracterisant un visiteur en possede
-tab_json.forEach(elt=>{
-    select_chaine+="<option value='"+elt.id_visiteur+"'>"+elt.nom+" "+elt.prenom+"</option>"
+let tab_vsiteur_existant=Array();
+tab_json.forEach((elt,key)=>{
+    if(tab_vsiteur_existant.indexOf(elt.id_visiteur)==-1)
+    {
+        select_chaine+="<option value='"+elt.id_visiteur+"'>"+elt.nom+" "+elt.prenom+"</option>";
+        tab_vsiteur_existant[key]=(elt.id_visiteur);
+    }
+    
 })
 select_visiteur.innerHTML=select_chaine;
 select_visiteur.addEventListener('change',function(event){
@@ -11,11 +17,16 @@ select_visiteur.addEventListener('change',function(event){
     vsts=document.querySelectorAll("[vst]");
     if(select_visiteur.value=='-1')
     {
-        vsts.forEach(elt=>{ elt.removeAttribute('disabled') })
+        vsts.forEach(elt=>{ 
+            elt.removeAttribute('disabled');
+        })
     }
     else
     {
-        vsts.forEach(elt=>{ elt.disabled=true});
+        vsts.forEach(elt=>{ 
+            elt.disabled=true;
+            elt.value=tab_json[tab_vsiteur_existant.indexOf(select_visiteur.value)][elt.id];
+        });
     }
 })
 

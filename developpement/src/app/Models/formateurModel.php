@@ -2,8 +2,11 @@
 
 namespace App\Models;
 
+use App\Controllers\Visiteur;
 use CodeIgniter\Model;
 use App\Models\visiteurModel;
+
+use function PHPSTORM_META\map;
 
 class formateurModel extends Model
 {
@@ -37,5 +40,15 @@ class formateurModel extends Model
     {
         $visiteur=new visiteurModel();
         return $visiteur->get_id($vst);
+    }
+
+    public function get_infos_formateurs(){
+        $mVisiteur=new visiteurModel();
+        $colunm=$this->findColumn('id_visiteur');
+        foreach($colunm as $elt)
+        {
+            $result[$elt]=$mVisiteur->find($elt);
+        }
+        return $result;
     }
 }

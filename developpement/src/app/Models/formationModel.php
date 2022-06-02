@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class formationrModel extends Model
+class formationModel extends Model
 {
     protected $table      = 'formation';
     protected $primaryKey = 'id';
