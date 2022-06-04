@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mar. 31 mai 2022 à 17:49
+-- Généré le : sam. 04 juin 2022 à 05:58
 -- Version du serveur : 8.0.27
 -- Version de PHP : 7.4.26
 
@@ -40,7 +40,9 @@ CREATE TABLE IF NOT EXISTS `apprenant` (
 --
 
 INSERT INTO `apprenant` (`id_visiteur`, `matricule`) VALUES
-(1, 'SEED-2022-001');
+(1, 'SEED-2022-001'),
+(45, 'mat-45'),
+(46, 'mat-46');
 
 -- --------------------------------------------------------
 
@@ -83,7 +85,9 @@ CREATE TABLE IF NOT EXISTS `formateur` (
 --
 
 INSERT INTO `formateur` (`id_visiteur`) VALUES
-(1);
+(1),
+(45),
+(47);
 
 -- --------------------------------------------------------
 
@@ -103,6 +107,13 @@ CREATE TABLE IF NOT EXISTS `formation` (
   KEY `id_formateur` (`id_formateur`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Déchargement des données de la table `formation`
+--
+
+INSERT INTO `formation` (`id`, `nom`, `prix`, `duree`, `commentaire`, `id_formateur`) VALUES
+(0, 'php', 55000, 8, '\r\n                    ', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -115,14 +126,23 @@ CREATE TABLE IF NOT EXISTS `inscription` (
   `id_apprenant` int UNSIGNED NOT NULL,
   `id_formation` int UNSIGNED NOT NULL,
   `montant_paye` int UNSIGNED NOT NULL,
+  `cout_total` int UNSIGNED NOT NULL COMMENT 'represente le cout de la formation + les fraies d''inscription',
   `date_inscription` date NOT NULL,
   `date_debut` date NOT NULL,
   `date_fin` date NOT NULL,
   `commentaire` text NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `id_apprenant` (`id_apprenant`),
+  UNIQUE KEY `id_apprenant` (`id_apprenant`,`id_formation`),
   KEY `id_formation` (`id_formation`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `inscription`
+--
+
+INSERT INTO `inscription` (`id`, `id_apprenant`, `id_formation`, `montant_paye`, `cout_total`, `date_inscription`, `date_debut`, `date_fin`, `commentaire`) VALUES
+(1, 1, 0, 50000, 60000, '2022-06-03', '2022-06-07', '2022-08-02', ''),
+(6, 45, 0, 20000, 0, '2022-06-04', '2022-06-05', '2022-07-31', '');
 
 -- --------------------------------------------------------
 
@@ -142,7 +162,7 @@ CREATE TABLE IF NOT EXISTS `visite` (
   PRIMARY KEY (`id`),
   KEY `id_employer` (`id_employer`),
   KEY `id_visiteur` (`id_visiteur`)
-) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `visite`
@@ -151,7 +171,8 @@ CREATE TABLE IF NOT EXISTS `visite` (
 INSERT INTO `visite` (`id`, `id_visiteur`, `id_employer`, `date`, `heure_debut`, `heure_fin`, `raison`) VALUES
 (1, 1, 1, '2022-05-26', '13:15:39', '00:00:00', 'travail'),
 (40, 1, 1, '2022-05-27', '21:57:00', '22:58:00', 'recuperation de coli'),
-(41, 1, 1, '2022-05-27', '22:25:00', '22:28:00', 'dd');
+(41, 1, 1, '2022-05-27', '22:25:00', '22:28:00', 'dd'),
+(42, 45, 1, '2022-06-02', '17:36:00', '19:36:00', 'visite Nr Dnjomou');
 
 -- --------------------------------------------------------
 
@@ -164,19 +185,22 @@ CREATE TABLE IF NOT EXISTS `visiteur` (
   `id` int UNSIGNED NOT NULL AUTO_INCREMENT,
   `nom` varchar(25) NOT NULL,
   `prenom` varchar(25) NOT NULL,
-  `CNI` varchar(50) DEFAULT NULL,
+  `cni` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `tel` bigint NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `tel` (`tel`),
-  UNIQUE KEY `CNI` (`CNI`)
-) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  UNIQUE KEY `CNI` (`cni`)
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `visiteur`
 --
 
-INSERT INTO `visiteur` (`id`, `nom`, `prenom`, `CNI`, `tel`) VALUES
-(1, 'Dnjomou', 'loic', 'weedwererfer', 651027093);
+INSERT INTO `visiteur` (`id`, `nom`, `prenom`, `cni`, `tel`) VALUES
+(1, 'Dnjomou', 'loic', 'weedwererfer', 651027093),
+(45, 'Moouta', 'jean', 'hsveri', 78555658447),
+(46, 'Moou', 'jean', 'hsvericcoc', 7855565844744),
+(47, 'Kakeu', 'Curtis', 'fereruf68546', 21688564);
 
 --
 -- Contraintes pour les tables déchargées

@@ -47,4 +47,10 @@ class apprenantModel extends Model
         $visiteur=new visiteurModel();
         return $visiteur->get_id($vst);
     }
+
+    public function get_infos_apprs(){
+        $mVisiteur=new visiteurModel();
+        $colunm=$this->findColumn('id_visiteur');
+        return $mVisiteur->find($colunm);
+    }
 }
