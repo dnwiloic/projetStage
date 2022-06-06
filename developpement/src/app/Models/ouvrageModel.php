@@ -5,7 +5,7 @@ namespace App\Models;
 use CodeIgniter\Model;
 use App\Models\visiteurModel;
 
-class apprenantModel extends Model
+class ouvrageModel extends Model
 {
     protected $table      = 'ouvrage';
     protected $primaryKey = 'id';
