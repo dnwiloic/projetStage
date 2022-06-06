@@ -1,0 +1,997 @@
+ERROR - 2022-06-06 06:15:48 --> Duplicata du champ '21688564' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:13:49 --> syntax error, unexpected '/'
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('abonne/ajouter')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('abonne/ajouter')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-06 07:17:16 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(68): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:18:17 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:18:17 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(68): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:18:18 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:18:18 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(68): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:18:32 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:18:32 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(68): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:18:33 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:18:33 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(68): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:17 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:17 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(68): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:18 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:18 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(68): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:18 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:18 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(68): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:18 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:18 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(68): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:19 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:19 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(68): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:20 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:20 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(68): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:21 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:21 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(68): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:21 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:21 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(68): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:21 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:21 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(68): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:41 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:41 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:41 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:41 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:42 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:42 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:42 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:42 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:42 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:42 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:42 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:42 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:43 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:43 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:43 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:43 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:43 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:43 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:43 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:43 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:43 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:43 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:43 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:43 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:44 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:44 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:53 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:53 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:54 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:54 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:54 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:54 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:54 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:54 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:55 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:55 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:55 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:55 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:55 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:55 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:19:55 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:19:55 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:20:05 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:20:05 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:20:05 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:20:05 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:20:05 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:20:05 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:20:06 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:20:06 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:20:06 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:20:06 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:20:06 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:20:06 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:20:06 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:20:06 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:20:06 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:20:06 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:20:07 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:20:07 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:20 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:20 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:21 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:21 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:21 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:21 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:21 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:21 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:22 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:22 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:31 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:31 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:32 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:32 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:32 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:32 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:32 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:32 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:45 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:45 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:46 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:46 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:46 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:46 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:46 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:46 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:47 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:47 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:47 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:47 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:47 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:47 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:21:47 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:21:47 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:22:00 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:22:00 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:22:01 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:22:01 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:22:01 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:22:01 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:22:02 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:22:02 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:22:02 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:22:02 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(69): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:23:44 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:23:44 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:24:50 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:24:50 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:25:26 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:25:26 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:25:26 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:25:26 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:25:27 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:25:27 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:25:58 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:25:58 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:25:58 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:25:58 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:26:03 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:26:03 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:26:05 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:26:05 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:26:05 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'
+CRITICAL - 2022-06-06 07:26:05 --> There is no primary key defined when trying to make insert.
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Abonne.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Abonne->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Abonne))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-06 07:27:00 --> Duplicata du champ '554886877' pour la clef 'visiteur.tel'

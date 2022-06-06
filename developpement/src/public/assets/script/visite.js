@@ -8,6 +8,7 @@ tab_json.forEach((elt,key)=>{
     {
         select_chaine+="<option value='"+elt.id_visiteur+"'>"+elt.nom+" "+elt.prenom+"</option>";
         tab_vsiteur_existant[key]=(elt.id_visiteur);
+        console.log("11\n");
     }
     
 })
@@ -37,16 +38,16 @@ const remplir=(i)=>{
         })
     let raison=document.getElementById("raison");
     raison.disabled=true;
-    raison.value=tab_json[i].raison;
-    document.getElementById("hd").value=tab_json[i].heure_debut;
-    document.getElementById("visiteur").value=tab_json[i].id_visiteur;
+    raison.value=tab_visite[i].raison;
+    document.getElementById("hd").value=tab_visite[i].heure_debut;
+    document.getElementById("visiteur").value=tab_visite[i].id_visiteur;
     
-    document.getElementById("date").value=tab_json[i].date;
-    document.getElementById("nom").value=tab_json[i].nom;
-    document.getElementById("prenom").value=tab_json[i].prenom;
-    document.getElementById("cni").value=tab_json[i].cni;
-    document.getElementById("tel").value=tab_json[i].tel;
-    document.getElementById("idv").value=parseInt(tab_json[i].id);
+    document.getElementById("date").value=tab_visite[i].date;
+    document.getElementById("nom").value=tab_visite[i].nom;
+    document.getElementById("prenom").value=tab_visite[i].prenom;
+    document.getElementById("cni").value=tab_visite[i].cni;
+    document.getElementById("tel").value=tab_visite[i].tel;
+    document.getElementById("idv").value=parseInt(tab_visite[i].id);
     document.querySelector("label[for='hf']").classList.add("requis");
     document.getElementById("hf").setAttribute("required","true");
 }

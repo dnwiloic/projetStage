@@ -51,7 +51,7 @@ include_once("entete.php");
         <form action="<?= base_url(); ?>/apprenant/ajouter" method="POST" class="popup-form ">
             <div class="form-header">
                 <h2> SEED RECEPTION</h2>
-                <h3>Ajouter un visiteur</h3>
+                <h3>Ajouter un apprenant</h3>
             </div>
 
             <label for="visiteur" class="inline w-min m-0">Visiteur</label>

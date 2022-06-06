@@ -13,6 +13,11 @@ class Visite extends BaseController
         $visiteModel = new visiteModel();
         $empModel = new employerModel();
         $visiteurModel = new visiteurModel();
+        $visiteurs=$visiteurModel->findAll();
+        foreach($visiteurs as $key=>$vst)
+        {
+            $visiteurs[$key]['id_visiteur']=$vst['id'];
+        } 
         $tab = array();
         $toShow = array();
         $visites = $visiteModel->findAll();
@@ -32,7 +37,7 @@ class Visite extends BaseController
             $toShow['raison']=$visite->raison;
             array_push($tab, $toShow );
         }
-        return view('liste_visite', ['visites' => $tab]);
+        return view('liste_visite', ['visites' => $tab,'tab_visiteur'=>$visiteurs]);
     }
 
     public function ajouter()

@@ -3,7 +3,8 @@ include_once("entete.php");
 ?>
 <body>
     <script type="text/javascript">
-        var tab_json = <?php print json_encode($visites) ?>;
+        var tab_json = <?php print json_encode($tab_visiteur) ?>;
+        var tab_visite = <?php print json_encode($visites) ?>;
         console.log(tab_json);
     </script>
     <?php include("navbar.php") ?>
