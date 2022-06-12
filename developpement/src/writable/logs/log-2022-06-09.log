@@ -1,0 +1,993 @@
+CRITICAL - 2022-06-09 01:31:07 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 01:31:08 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 01:31:08 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 01:31:08 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 01:31:09 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 01:31:09 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 01:32:45 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 01:32:46 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 01:32:46 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 01:32:46 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 01:32:46 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 01:33:39 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 02:16:52 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 02:16:53 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 02:17:45 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 02:17:46 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 02:17:46 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-06-09 02:17:46 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_emprunt.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_emprunt', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(34): view('liste_emprunt', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-06-09 05:56:02 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`emprunt`, CONSTRAINT `emprunt_ibfk_1` FOREIGN KEY (`id_abonne`) REFERENCES `abonne` (`id_visiteur`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-06-09 05:57:33 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`emprunt`, CONSTRAINT `emprunt_ibfk_1` FOREIGN KEY (`id_abonne`) REFERENCES `abonne` (`id_visiteur`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+CRITICAL - 2022-06-09 05:58:06 --> syntax error, unexpected 'var_dump' (T_STRING), expecting ';' or ','
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('emprunt/ajouter')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('emprunt/ajouter')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+ERROR - 2022-06-09 05:58:08 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`emprunt`, CONSTRAINT `emprunt_ibfk_1` FOREIGN KEY (`id_abonne`) REFERENCES `abonne` (`id_visiteur`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+ERROR - 2022-06-09 05:59:07 --> Cannot add or update a child row: a foreign key constraint fails (`seed_reception`.`emprunt`, CONSTRAINT `emprunt_ibfk_1` FOREIGN KEY (`id_abonne`) REFERENCES `abonne` (`id_visiteur`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+CRITICAL - 2022-06-09 05:59:18 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 05:59:20 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 05:59:20 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 05:59:20 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:00:00 --> syntax error, unexpected '}'
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('emprunt/ajouter')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('emprunt/ajouter')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:00:30 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:14:49 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:14:50 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:15:21 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:15:22 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:15:22 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:16:17 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:16:18 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:16:18 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:16:37 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:16:37 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:16:43 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:16:43 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:16:44 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:16:44 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:16:44 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:16:44 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:17:20 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 21, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:17:20 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:17:20 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:17:32 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:17:33 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:17:33 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:19:28 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:19:29 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:19:29 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:19:29 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:20:19 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:20:20 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:20:20 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:20:20 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:20:25 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:21:49 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:22:57 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:22:58 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:22:58 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:22:58 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:22:59 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:22:59 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:22:59 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:22:59 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:07 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:07 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:07 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:07 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:28 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:29 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:29 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:29 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:30 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:30 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:30 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:31 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:31 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:31 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:31 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:31 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:48 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:49 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:49 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:49 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:56 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:23:56 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:24:04 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:24:05 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:24:05 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:25:25 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:25:26 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:25:26 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:25:48 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:25:48 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:25:49 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:25:49 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:25:49 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:25:49 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:25:49 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:25:50 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:25:58 --> Object of class App\Models\abonneModel could not be converted to string
+#0 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#5 {main}
+CRITICAL - 2022-06-09 06:25:59 --> Object of class App\Models\abonneModel could not be converted to string
+#0 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#5 {main}
+CRITICAL - 2022-06-09 06:25:59 --> Object of class App\Models\abonneModel could not be converted to string
+#0 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#5 {main}
+CRITICAL - 2022-06-09 06:26:48 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:26:49 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:27:15 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 22, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:27:16 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:27:16 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:27:16 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:27:17 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:27:17 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:27:27 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:27:28 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-09 06:28:13 --> A non-numeric value encountered
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Emprunt.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\wamp64\\www\\p...', 23, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Emprunt->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Emprunt))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}

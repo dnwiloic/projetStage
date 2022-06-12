@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jun 06, 2022 at 12:29 PM
+-- Generation Time: Jun 12, 2022 at 02:21 PM
 -- Server version: 8.0.27
 -- PHP Version: 7.4.26
 
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `abonne` (
 --
 
 INSERT INTO `abonne` (`id_visiteur`, `montant_verse`, `cout_abonnement`, `date_inscription`, `date_expiration`, `carte_membre_genere`) VALUES
-(1, 5000, 0, '2022-06-06', '0000-00-00', 0),
+(1, 15000, 15000, '2022-06-09', '2023-06-09', 1),
 (45, 10000, 15000, '2022-06-06', '2023-06-06', 1),
 (47, 10000, 0, '2022-06-06', '2023-06-06', 0),
 (50, 4000, 10000, '2022-06-04', '2023-06-04', 0);
@@ -113,7 +113,14 @@ CREATE TABLE IF NOT EXISTS `emprunt` (
   PRIMARY KEY (`id`),
   KEY `id_abonne` (`id_abonne`),
   KEY `id_ouvrage` (`id_ouvrage`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `emprunt`
+--
+
+INSERT INTO `emprunt` (`id`, `id_ouvrage`, `id_abonne`, `date_emprunt`, `date_retour_prevu`, `date_retour_effectif`, `feelback`) VALUES
+(8, 1, 1, '2022-06-09', '2022-07-09', '0000-00-00', '');
 
 -- --------------------------------------------------------
 
@@ -201,12 +208,19 @@ DROP TABLE IF EXISTS `ouvrage`;
 CREATE TABLE IF NOT EXISTS `ouvrage` (
   `id` int UNSIGNED NOT NULL AUTO_INCREMENT,
   `titre` varchar(25) NOT NULL,
-  `non_auteur` varchar(25) NOT NULL,
+  `nom_auteur` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `edition` varchar(10) NOT NULL,
   `nombre_de_page` int NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `titre` (`titre`,`non_auteur`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  UNIQUE KEY `titre` (`titre`,`nom_auteur`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `ouvrage`
+--
+
+INSERT INTO `ouvrage` (`id`, `titre`, `nom_auteur`, `edition`, `nombre_de_page`) VALUES
+(1, 'cdshjsc', 'dsdkjn', 'jdcsj', 45);
 
 -- --------------------------------------------------------
 

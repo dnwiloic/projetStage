@@ -96,6 +96,6 @@ class Abonne extends BaseController
             echo "rien a faire";
         }
 
-        return redirect()->to(base_url('apprenant'));
+        return redirect()->to(base_url('abonne'));
     }
 }

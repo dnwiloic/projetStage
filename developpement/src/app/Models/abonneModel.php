@@ -29,8 +29,17 @@ class abonneModel extends Model
 
     public function get_attr_of($id,$attr)
     {
-        $elt=$this->find($id);
-        return $elt[$attr];
+        $mVisiteur=new visiteurModel();
+        if( in_array($attr,['montant_verse','cout_abonnement','date_inscription','date_expiration','carte_membre_genere']))
+        {
+            $elt=$this->find($id);
+            return $elt[$attr];
+        }
+        else
+        {   
+            $elt=$mVisiteur->find($id);
+            return $elt[$attr];
+        }
     }
 
     public function get_id($vst)
@@ -43,5 +52,12 @@ class abonneModel extends Model
         $mVisiteur=new visiteurModel();
         $colunm=$this->findColumn('id_visiteur');
         return $mVisiteur->find($colunm);
+    }
+
+    public function get_abn_eligible(){
+        $emp=$this->db->query("SELECT id_visiteur FROM abonne WHERE montant_verse=cout_abonnement
+                                    AND date_expiration > now()");
+        $emp=$emp->getResultArray();
+        return $emp;
     }
 }
