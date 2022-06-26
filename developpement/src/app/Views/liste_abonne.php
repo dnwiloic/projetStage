@@ -8,6 +8,9 @@ include_once("entete.php");
         var tab_json = <?php print json_encode($tab_visiteurs) ?>;
         var tab_abn = <?php print json_encode($tab_abn) ?>;
         console.log(tab_json);
+
+        var controler='abonne';
+        var base_url=<?php print json_encode(base_url()) ?>;
     </script>
 
     <?php include("navbar.php") ?>
@@ -24,12 +27,12 @@ include_once("entete.php");
             </div>
             <table>
                 <tr>
-                    <th>Nom & prenom</th>
-                    <th>Montant versé</th>
-                    <th>Coût de l'abonnement</th>
-                    <th>Date inscription</th>
-                    <th>Date expiration</th>
-                    <th>carte membre</th>
+                    <th nom_col='nom'>Nom & prenom</th>
+                    <th nom_col='montant_verse'>Montant versé</th>
+                    <th nom_col='cout_abonnement'>Coût de l'abonnement</th>
+                    <th nom_col='date_inscription'>Date inscription</th>
+                    <th nom_col='date_expiration'>Date expiration</th>
+                    <th nom_col='carte_membre_genere'>carte membre</th>
                     <th>Actions</th>
                 </tr>
                 <?php
@@ -125,9 +128,9 @@ include_once("entete.php");
         </form>
     </div>
 
-
-    <script src="assets/script/visite.js"></script>
-    <script src="assets/script/popup.js"></script>
+    <script src="<?= base_url();?>/assets/script/trie.js"></script>
+    <script src="<?= base_url();?>/assets/script/visite.js"></script>
+    <script src="<?= base_url();?>/assets/script/popup.js"></script>
     <script type="text/javascript">
         document.getElementById("b_cout_total").addEventListener('click', function(event) {
             console.log("click");

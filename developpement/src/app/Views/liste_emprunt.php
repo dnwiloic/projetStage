@@ -12,6 +12,9 @@ include_once("entete.php");
         console.log(tab_emp);
         console.log(tab_abn);
         console.log(tab_livre);
+
+        var controler='emprunt';
+        var base_url=<?php print json_encode(base_url()) ?>;
     </script>
 
     <?php include("navbar.php") ?>
@@ -28,12 +31,12 @@ include_once("entete.php");
             </div>
             <table>
                 <tr>
-                    <th>Nom & prenom</th>
-                    <th>titre du livre</th>
-                    <th>Date emprunt</th>
-                    <th>Date retour prevu</th>
-                    <th>Date retour effectif</th>
-                    <th>Feelback</th>
+                    <th nom_col='emprunteur'>Nom & prenom</th>
+                    <th nom_col='livre'>titre du livre</th>
+                    <th nom_col='date_emprunt'>Date emprunt</th>
+                    <th nom_col='date_retour_prevu'>Date retour prevu</th>
+                    <th nom_col='date_retour_effectif'>Date retour effectif</th>
+                    <th nom_col='feelback'>Feelback</th>
                     <th>Actions</th>
                 </tr>
 
@@ -95,7 +98,8 @@ include_once("entete.php");
         </form>
     </div>
 
-    <script src="assets/script/popup.js"></script>
+    <script src="<?= base_url();?>/assets/script/trie.js"></script>
+    <script src="<?= base_url();?>/assets/script/popup.js"></script>
     <script type="text/javascript">
          document.getElementById("nbr_elt").innerHTML = (document.querySelectorAll(".list tr")).length - 1;
         // remplissons le select des formations

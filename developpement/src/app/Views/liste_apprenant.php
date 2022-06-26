@@ -7,6 +7,9 @@ include_once("entete.php");
         var tab_json = <?php print json_encode($tab_visiteurs) ?>;
         var tab_appr = <?php print json_encode($tab_appr) ?>;
         console.log(tab_json);
+
+        var controler='apprenant';
+        var base_url=<?php print json_encode(base_url()) ?>;
     </script>
 
     <?php include("navbar.php") ?>
@@ -23,10 +26,10 @@ include_once("entete.php");
             </div>
             <table>
                 <tr>
-                    <th>Nom & prenom</th>
-                    <th>Matricule</th>
-                    <th>N CNI</th>
-                    <th>Telephone</th>
+                    <th nom_col='nom'>Nom & prenom</th>
+                    <th nom_col='matricule'>Matricule</th>
+                    <th nom_col='cni'>N CNI</th>
+                    <th nom_col='tel'>Telephone</th>
                     <th>Actions</th>
                 </tr>
                 <?php
@@ -86,9 +89,9 @@ include_once("entete.php");
         </form>
     </div>
 
-
-    <script src="assets/script/visite.js"></script>
-    <script src="assets/script/popup.js"></script>
+    <script src="<?= base_url();?>/assets/script/trie.js"></script>
+    <script src="<?= base_url();?>/assets/script/visite.js"></script>
+    <script src="<?= base_url();?>/assets/script/popup.js"></script>
 </body>
 
 </html>

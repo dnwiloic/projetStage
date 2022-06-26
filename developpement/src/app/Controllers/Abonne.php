@@ -1,6 +1,8 @@
 <?php
 
+
 namespace App\Controllers;
+helper('array');//chargement du heper des array. cela me permet d'utiliser array_sort_by_multiple_keys()
 
 use App\Models\abonneModel;
 use App\Models\apprenantModel;
@@ -8,7 +10,7 @@ use App\Models\visiteurModel;
 
 class Abonne extends BaseController
 {
-    public function index()
+    public function index($col='id_visiteur',$typeTri='desc')
     {
         $mAbonne =new abonneModel();
         $modelVisiteur = new visiteurModel();
@@ -26,6 +28,19 @@ class Abonne extends BaseController
             $abonnes[$key]['prenom']=$modelVisiteur->get_attr_of($elt['id_visiteur'],'prenom');
             $abonnes[$key]['cni']=$modelVisiteur->get_attr_of($elt['id_visiteur'],'cni');
             $abonnes[$key]['tel']=$modelVisiteur->get_attr_of($elt['id_visiteur'],'tel');
+        }
+
+        //tri
+        if($typeTri=="desc"){
+            array_sort_by_multiple_keys($abonnes,[
+                $col=>SORT_DESC
+            ]);
+        }
+        else
+        {
+            array_sort_by_multiple_keys($abonnes,[
+                $col=>SORT_ASC
+            ]);
         }
         return view('liste_abonne', ['tab_visiteurs' => $visiteurs,'tab_abn'=>$abonnes]);
     }

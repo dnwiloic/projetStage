@@ -3,7 +3,7 @@
            
             <div class="flex items-center md:order-2">
                 <div class="flex mr-3 text-sm bg-gray-800 md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
-                    <img  src="\assets\image\logos/logoSEED.png" alt="logo">
+                    <img  src="<?= base_url();?>\assets\image\logos/logoSEED.png" alt="logo">
                 </div >
 
                 <!-- <div class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(1054.4px, 1008px, 0px);">

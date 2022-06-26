@@ -540,6 +540,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: -0.75rem;
 }
 
+.right-2 {
+  right: 0.5rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -2867,6 +2871,14 @@ a {
 .list>table th,.list>table td
 {
   width: 5%;
+}
+
+.list>table th {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
 }
 
 .titre-tableau {

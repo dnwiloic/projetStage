@@ -1,13 +1,13 @@
 <?php
 
 namespace App\Controllers;
-
+helper('array');//chargement du heper des array. cela me permet d'utiliser array_sort_by_multiple_keys()
 use App\Models\formateurModel;
 use App\Models\visiteurModel;
 
 class Formateur extends BaseController
 {
-    public function index()
+    public function index($col='id',$typeTri='desc')
     {
         $modelFormateur=new formateurModel();
         $modelVisiteur=new visiteurModel();
@@ -17,6 +17,19 @@ class Formateur extends BaseController
         foreach($result as $key=>$elt)
         {
             $result[$key]['id_visiteur']=$elt['id'];
+        }
+
+        //tri
+        if($typeTri=="desc"){
+            array_sort_by_multiple_keys($result,[
+                $col=>SORT_DESC
+            ]);
+        }
+        else
+        {
+            array_sort_by_multiple_keys($result,[
+                $col=>SORT_ASC
+            ]);
         }
         return view('liste_formateur',['tab_visiteurs'=>$result,'tab_formt'=>$ids]);
     }

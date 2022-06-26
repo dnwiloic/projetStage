@@ -6,6 +6,9 @@ include_once("entete.php");
     <script type="text/javascript">
         var tab_json = <?php print json_encode($tab_visiteurs) ?>;
         console.log(tab_json);
+
+        var controler='formateur';
+        var base_url=<?php print json_encode(base_url()) ?>;
     </script>
 
     <?php include("navbar.php") ?>
@@ -22,10 +25,10 @@ include_once("entete.php");
             </div>
             <table>
                 <tr>
-                    <th>Nom & prenom</th>
-                    <th>N CNI</th>
-                    <th>Telephone</th>
-                    <th>Actions</th>
+                    <th nom_col='nom'>Nom & prenom</th>
+                    <th nom_col='cni'>N CNI</th>
+                    <th nom_col='tel'>Telephone</th>
+                    <th >Actions</th>
                 </tr>
                 <?php
                 foreach ($tab_visiteurs as $visiteur) {
@@ -82,8 +85,9 @@ include_once("entete.php");
         </div>
     </div>
 
-    <script src="assets/script/visite.js"></script>
-    <script src="assets/script/popup.js"></script>
+    <script src="<?= base_url();?>/assets/script/trie.js"></script>
+    <script src="<?= base_url();?>/assets/script/visite.js"></script>
+    <script src="<?= base_url();?>/assets/script/popup.js"></script>
 </body>
 
 </html>

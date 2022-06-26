@@ -1,0 +1,138 @@
+CRITICAL - 2022-06-24 03:35:16 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Models\apprenantModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\p...', 40, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Apprenant.php(19): App\Models\apprenantModel->get_attr_of('47', 'matricule')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Apprenant->index()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apprenant))
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#7 {main}
+CRITICAL - 2022-06-24 03:35:28 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Models\apprenantModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\p...', 40, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Apprenant.php(19): App\Models\apprenantModel->get_attr_of('47', 'matricule')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Apprenant->index()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apprenant))
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#7 {main}
+CRITICAL - 2022-06-24 04:04:43 --> Call to undefined function App\Controllers\array_sort_by_multiple_keys()
+#0 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visiteur->index()
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#5 {main}
+CRITICAL - 2022-06-24 04:07:37 --> Argument 1 passed to array_sort_by_multiple_keys() must be of the type array, null given, called in C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visiteur.php on line 16
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visiteur.php(16): array_sort_by_multiple_keys(NULL, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visiteur->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-24 04:07:54 --> Argument 1 passed to array_sort_by_multiple_keys() must be of the type array, null given, called in C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visiteur.php on line 16
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visiteur.php(16): array_sort_by_multiple_keys(NULL, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visiteur->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-24 04:18:23 --> Argument 1 passed to array_sort_by_multiple_keys() must be of the type array, null given, called in C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Inscription.php on line 33
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Inscription.php(33): array_sort_by_multiple_keys(NULL, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Inscription->index()
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-24 04:29:46 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Models\apprenantModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\p...', 40, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Apprenant.php(19): App\Models\apprenantModel->get_attr_of('47', 'matricule')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Apprenant->index()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apprenant))
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#7 {main}
+CRITICAL - 2022-06-24 04:31:50 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Models\apprenantModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\p...', 40, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Apprenant.php(19): App\Models\apprenantModel->get_attr_of('47', 'matricule')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Apprenant->index()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apprenant))
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#7 {main}
+CRITICAL - 2022-06-24 04:31:51 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Models\apprenantModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\p...', 40, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Apprenant.php(19): App\Models\apprenantModel->get_attr_of('47', 'matricule')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Apprenant->index()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apprenant))
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#7 {main}
+CRITICAL - 2022-06-24 04:31:51 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Models\apprenantModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\p...', 40, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Apprenant.php(19): App\Models\apprenantModel->get_attr_of('47', 'matricule')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Apprenant->index()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apprenant))
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#7 {main}
+CRITICAL - 2022-06-24 04:33:28 --> syntax error, unexpected '$result' (T_VARIABLE)
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('apprenant')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('apprenant')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#6 {main}
+CRITICAL - 2022-06-24 04:35:42 --> Array to string conversion
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Models\apprenantModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\wamp64\\www\\p...', 40, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Apprenant.php(19): App\Models\apprenantModel->get_attr_of('1', 'matricule')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Apprenant->index('cni', 'desc')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apprenant))
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#7 {main}
+CRITICAL - 2022-06-24 04:36:12 --> Array to string conversion
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Models\apprenantModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\wamp64\\www\\p...', 40, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Apprenant.php(19): App\Models\apprenantModel->get_attr_of('1', 'matricule')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Apprenant->index('cni', 'desc')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apprenant))
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#7 {main}
+CRITICAL - 2022-06-24 04:36:13 --> Array to string conversion
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Models\apprenantModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\wamp64\\www\\p...', 40, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Apprenant.php(19): App\Models\apprenantModel->get_attr_of('1', 'matricule')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Apprenant->index('cni', 'desc')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apprenant))
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#7 {main}
+CRITICAL - 2022-06-24 04:36:13 --> Array to string conversion
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Models\apprenantModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\wamp64\\www\\p...', 40, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Apprenant.php(19): App\Models\apprenantModel->get_attr_of('1', 'matricule')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Apprenant->index('cni', 'desc')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apprenant))
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#7 {main}
+CRITICAL - 2022-06-24 04:36:14 --> Array to string conversion
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Models\apprenantModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\wamp64\\www\\p...', 40, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Apprenant.php(19): App\Models\apprenantModel->get_attr_of('1', 'matricule')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Apprenant->index('cni', 'desc')
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apprenant))
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#7 {main}

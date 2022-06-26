@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
+helper('array');//chargement du heper des array. cela me permet d'utiliser array_sort_by_multiple_keys()
 use App\Models\apprenantModel;
 use App\Models\formationModel;
 use App\Models\inscriptionModel;
@@ -9,7 +9,7 @@ use App\Models\visiteurModel;
 
 class Inscription extends BaseController
 {
-    public function index()
+    public function index($col='id',$typeTri='desc')
     {
         $mInscription=new inscriptionModel();
         $mAppr=new apprenantModel();
@@ -23,6 +23,22 @@ class Inscription extends BaseController
             $tab_inscription[$key]['prenom']=$mVisiteur->get_attr_of($inscription['id_apprenant'],'prenom');
             $tab_inscription[$key]['nomV']=$mVisiteur->get_attr_of($inscription['id_apprenant'],'nom');
             $tab_inscription[$key]['nomF']=$mFormation->get_attr_of($inscription['id_formation'],'nom');//nom de la formation
+            $tab_inscription[$key]['montant_restant']=(int)$inscription['cout_total'] - (int)$inscription['montant_paye'];
+        }
+
+        //tri
+        if($typeTri=="desc"){
+            array_sort_by_multiple_keys($tab_inscription,[
+                $col=>SORT_DESC,
+                'prenom'=>SORT_DESC
+            ]);
+        }
+        else
+        {
+            array_sort_by_multiple_keys($tab_inscription,[
+                $col=>SORT_ASC,
+                'prenom'=>SORT_ASC
+            ]);
         }
 
         return view('liste_inscription',['tab_inscription'=>$tab_inscription,'tab_formation'=>$tab_formation,'tab_appr'=>$tab_appr]);

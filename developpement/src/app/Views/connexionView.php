@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../dist/style.css"> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-</head>
+<?php
+include_once("entete.php");
+?>
 
 <body class="min-h-screen bg-gray-200">
     <!-- <form action="" class="center-form " >
@@ -58,7 +50,7 @@
                     Password
                 </label>
 
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" name="password" type="password" required placeholder="">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" name="password" type="password" required placeholder="Password">
                 <!-- <p class="text-red-500 text-xs italic">Please choose a password.</p> -->
             </div>
             <div class="flex items-center justify-between mb-4">

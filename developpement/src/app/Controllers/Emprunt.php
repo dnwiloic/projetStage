@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
+helper('array');//chargement du heper des array. cela me permet d'utiliser array_sort_by_multiple_keys()
 use App\Models\abonneModel;
 use App\Models\employerModel;
 use App\Models\empruntModel;
@@ -9,7 +9,7 @@ use App\Models\ouvrageModel;
 
 class Emprunt extends BaseController
 {
-    public function index()
+    public function index($col='id',$typeTri='desc')
     {
         $mEmprunt=new empruntModel();
         $mLivre=new ouvrageModel();
@@ -32,7 +32,18 @@ class Emprunt extends BaseController
         }
         $tab_livre=$mLivre->findAll();
         
-       
+       //tri
+       if($typeTri=="desc"){
+        array_sort_by_multiple_keys($tab_emprunt,[
+            $col=>SORT_DESC
+        ]);
+    }
+    else
+    {
+        array_sort_by_multiple_keys($tab_emprunt,[
+            $col=>SORT_ASC
+        ]);
+    }
         return view('liste_emprunt',['tab_emprunt'=>$tab_emprunt,'tab_abn'=>$tab_abn,'tab_livre'=>$tab_livre]);
     }
     public function ajouter()

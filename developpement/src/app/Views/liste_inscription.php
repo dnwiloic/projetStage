@@ -10,6 +10,9 @@ include_once("entete.php");
         console.log(tab_json);
         console.log(tab_formation);
         console.log(tab_appr);
+
+        var controler='inscription';
+        var base_url=<?php print json_encode(base_url()) ?>;
     </script>
 
     <?php include("navbar.php") ?>
@@ -26,14 +29,14 @@ include_once("entete.php");
             </div>
             <table>
                 <tr>
-                    <th>Nom & prenom</th>
-                    <th>Formation</th>
-                    <th>Mantant payé</th>
-                    <th>Mantant restant</th>
-                    <th>date d'inscription</th>
-                    <th>date de debut</th>
-                    <th>date de fin</th>
-                    <th>Commentaire</th>
+                    <th nom_col='prenom'>Nom & prenom</th>
+                    <th nom_col='nomF'>Formation</th>
+                    <th nom_col='montant_paye'>Mantant payé</th>
+                    <th nom_col='nom'>Mantant restant</th>
+                    <th nom_col='date_inscription'>date d'inscription</th>
+                    <th nom_col='date_debut'>date de debut</th>
+                    <th nom_col='date_fin'>date de fin</th>
+                    <th nom_col='commentaire'>Commentaire</th>
                     <th>Actions</th>
                 </tr>
                 <?php
@@ -44,7 +47,7 @@ include_once("entete.php");
                         <td><?php echo $inscription['prenom']." ".$inscription['nomV']; ?></td>
                         <td><?php echo $inscription['nomF']; ?></td>
                         <td><?php echo $inscription['montant_paye']; ?></td>
-                        <td><?php echo (int)$inscription['cout_total'] - (int)$inscription['montant_paye']; ?></td>
+                        <td><?php echo $inscription['montant_restant'] ?></td>
                         <td><?php echo $inscription['date_inscription']; ?></td>
                         <td><?php echo $inscription['date_debut']; ?></td>
                         <td><?php echo $inscription['date_fin']; ?></td>
@@ -117,7 +120,8 @@ include_once("entete.php");
         </form>
     </div>
 
-    <script src="assets/script/popup.js"></script>
+    <script src="<?= base_url();?>/assets/script/trie.js"></script>
+    <script src="<?= base_url();?>/assets/script/popup.js"></script>
     <script type="text/javascript">
         document.getElementById("nbr_elt").innerHTML = (document.querySelectorAll(".list tr")).length - 1;
         // remplissons le select des formations

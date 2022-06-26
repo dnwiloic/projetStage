@@ -6,6 +6,8 @@ include_once("entete.php");
         var tab_json = <?php print json_encode($tab_visiteur) ?>;
         var tab_visite = <?php print json_encode($visites) ?>;
         console.log(tab_json);
+        var controler='visite';
+        var base_url=<?php print json_encode(base_url()) ?>;
     </script>
     <?php include("navbar.php") ?>
     <div class="grid grid-cols-7">
@@ -27,12 +29,12 @@ include_once("entete.php");
         </form> -->
             <table class="">
                 <tr>
-                    <th>Visiteur</th>
-                    <th>Employer</th>
-                    <th>Raison</th>
-                    <th>Date</th>
-                    <th>Heure de Debut</th>
-                    <th>Heure de fin</th>
+                    <th nom_col='visiteur'>Visiteur </th>
+                    <th nom_col='employer'>Employer</th>
+                    <th nom_col='raison'>Raison</th>
+                    <th nom_col='date'>Date</th>
+                    <th nom_col='heure_debut'>Heure de Debut</th>
+                    <th nom_col='heure_fin'>Heure de fin</th>
                     <th>Action</th>
                 </tr>
                 <?php
@@ -70,7 +72,7 @@ include_once("entete.php");
         <div class="popup-back" popup_id="p_form_visite">
             <form action="<?= base_url(); ?>/visite/ajouter" method="POST" class="popup-form">
                 <div class="relative">
-                    <button type="button"><img src="assets/image/button/fermer-la-croix.png" alt="fermer" class="close-popup absolute right-0 top-0 w-4 h-4" popup_to_close="p_form_visite"></button>
+                    <button type="button"><img src="<?=base_url();?>/assets/image/button/fermer-la-croix.png" alt="fermer" class="close-popup absolute right-0 top-0 w-4 h-4" popup_to_close="p_form_visite"></button>
                 </div>
                 <div class="form-header">
                     <h2> SEED RECEPTION</h2>
@@ -132,8 +134,9 @@ include_once("entete.php");
     </div>
 
 
-    <script src="assets/script/popup.js"></script>
-    <script src="assets/script/visite.js"></script>
+    <script src="<?= base_url();?>/assets/script/popup.js"></script>
+    <script src="<?= base_url();?>/assets/script/visite.js"></script>
+    <script src="<?= base_url();?>/assets/script/trie.js"></script>
 
 </body>
 

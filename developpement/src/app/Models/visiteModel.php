@@ -11,7 +11,7 @@ class visiteModel extends Model
 
     protected $useAutoIncrement = true;
 
-    protected $returnType     = 'object';
+    protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
     protected $allowedFields = ["id","id_visiteur","id_employer","date","heure_debut","heure_fin","raison"];
@@ -24,5 +24,10 @@ class visiteModel extends Model
     protected $validationRules    = [];
     protected $validationMessages = [];
     protected $skipValidation     = false;
+
+    public function setReturnType($newType)
+    {
+        $this->returnType=$newType;
+    }
 
 }

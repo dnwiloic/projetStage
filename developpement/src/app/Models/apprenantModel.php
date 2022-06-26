@@ -37,7 +37,11 @@ class apprenantModel extends Model
         else
         {
             $elt=$this->find($id);
-            return $elt[$attr];
+            if($elt==null)
+            {
+                return ;
+            }
+            return $elt['matricule'];
         }
         
     }

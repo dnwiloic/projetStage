@@ -6,6 +6,9 @@ include_once("entete.php");
     <script type="text/javascript">
         var tab_livre = <?php print json_encode($tab_livre) ?>;
         console.log(tab_livre);
+
+        var controler='ouvrage';
+        var base_url=<?php print json_encode(base_url()) ?>;
     </script>
 
     <?php include("navbar.php") ?>
@@ -23,11 +26,11 @@ include_once("entete.php");
 
             <table>
                 <tr>
-                    <th>Titre</th>
-                    <th>Nom de L'auteur</th>
-                    <th>Edition</th>
-                    <th>Nombre de pages</th>
-                    <th>Actions</th>
+                    <th nom_col='titre'>Titre</th>
+                    <th nom_col='nom_auteur'>Nom de L'auteur</th>
+                    <th nom_col='edition'>Edition</th>
+                    <th nom_col='nombre_de_page'>Nombre de pages</th>
+                    <th >Actions</th>
                 </tr>
                 <?php
                 foreach ($tab_livre as $livre) {
@@ -77,10 +80,12 @@ include_once("entete.php");
             </form>
         </div>
 
+        <script src="<?= base_url();?>/assets/script/trie.js"></script>
+        <script src="<?= base_url();?>/assets/script/popup.js"></script>
         <script>
             document.getElementById("nbr_elt").innerHTML = (document.querySelectorAll(".list tr")).length - 1;
         </script>
-        <script src="assets/script/popup.js"></script>
+        
 </body>
 
 </html>
