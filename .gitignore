@@ -1,1 +1,3 @@
 developpement/src/.env
+developpement/src/app/Controllers/Vsts.php
+developpement/src/writable/debugbar/
