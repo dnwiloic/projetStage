@@ -1,0 +1,77 @@
+CRITICAL - 2022-08-10 01:57:54 --> array_multisort(): Array sizes are inconsistent
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_multisort...', 'C:\\wamp64\\www\\p...', 190, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Helpers\array_helper.php(190): array_multisort(Array, 3, Array)
+#2 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(21): array_sort_by_multiple_keys(Array, Array)
+#3 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->index()
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-08-10 02:00:12 --> Undefined variable: tab_arg
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_entreeArgent.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\p...', 35, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_entreeArg...', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(31): view('liste_entreeArg...', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-08-10 02:00:53 --> Illegal string offset 'date'
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_entreeArgent.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\wamp64\\www\\p...', 38, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_entreeArg...', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(31): view('liste_entreeArg...', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->index()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-08-10 02:03:04 --> syntax error, unexpected 'Array' (T_ARRAY), expecting ';'
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\p...')
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\mouv...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\mouv...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(15): spl_autoload_call('App\\Models\\mouv...')
+#4 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->index()
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-08-10 02:04:16 --> Champ 'abonnement' inconnu dans field list
+CRITICAL - 2022-08-10 02:04:16 --> Champ 'abonnement' inconnu dans field list
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('CALL add_entree...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('CALL add_entree...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('CALL add_entree...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\mouvArgentModel.php(55): CodeIgniter\Database\BaseConnection->query('CALL add_entree...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(47): App\Models\mouvArgentModel->add_mvt_argent('2022-08-10', '15000', 'abonnement', 1)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-08-10 02:05:03 --> Champ 'abonnement' inconnu dans field list
+CRITICAL - 2022-08-10 02:05:03 --> Champ 'abonnement' inconnu dans field list
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('CALL add_entree...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('CALL add_entree...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('CALL add_entree...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\mouvArgentModel.php(55): CodeIgniter\Database\BaseConnection->query('CALL add_entree...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(47): App\Models\mouvArgentModel->add_mvt_argent('2022-08-10', '15000', 'abonnement', 1)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-08-10 02:14:06 --> Incorrect date value: '0000-00-00' for column 'date' at row 1
+CRITICAL - 2022-08-10 02:14:06 --> Incorrect date value: '0000-00-00' for column 'date' at row 1
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('CALL add_entree...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('CALL add_entree...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('CALL add_entree...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\mouvArgentModel.php(55): CodeIgniter\Database\BaseConnection->query('CALL add_entree...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(47): App\Models\mouvArgentModel->add_mvt_argent('2022-08-10', '15000', 'abonnement', 1)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->ajouter()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
