@@ -51,4 +51,23 @@ class formateurModel extends Model
         }
         return $result;
     }
+
+    public function get_formateurs(){
+        $rqt=$this->db->query('CALL get_visiteurs_formateurs()');
+        return $rqt->getResultArray();
+    }
+
+    public function recherche($chaine)
+    {
+        //rechreche le formateur en fonction de toutes les colonnes 
+        /* -- params --
+           $chaine: element a rechercher
+        */
+        $rst = $this->db->query("SELECT * FROM visiteur_formateur WHERE
+        nom like '%$chaine%' OR prenom like '%$chaine%' OR
+        cni like '%$chaine%' OR tel like '%$chaine%' ;
+        ");
+
+        return $rst->getResultArray();
+    }
 }

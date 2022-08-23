@@ -1,9 +1,8 @@
 <?php
 
 namespace App\Controllers;
-helper('array');//chargement du heper des array. cela me permet d'utiliser array_sort_by_multiple_keys()
+helper('array');//chargement du helper des array. cela me permet d'utiliser array_sort_by_multiple_keys()
 use App\Models\apprenantModel;
-use App\Models\visiteModel;
 use App\Models\visiteurModel;
 
 class Apprenant extends BaseController
@@ -12,14 +11,7 @@ class Apprenant extends BaseController
     {
         $modelApprenant = new apprenantModel();
         $modelVisiteur = new visiteurModel();
-        $ids = $modelApprenant->findColumn('id_visiteur');
-            $result = $modelVisiteur->findAll();
-        foreach($result as $key=>$elt)
-        {
-            $result[$key]['matricule']=$modelApprenant->get_attr_of($elt['id'],'matricule');
-            $result[$key]['id_visiteur']=$elt['id'];// le tableau javascript commun a tout les fichiers gerant les cisiteur utilise id_visiteur pour referencer un visiteur
-        }
-
+        $result=$modelApprenant->get_apprenants();
         //tri
         if($typeTri=="desc"){
             array_sort_by_multiple_keys($result,[
@@ -32,7 +24,7 @@ class Apprenant extends BaseController
                 $col=>SORT_ASC
             ]);
         }
-        return view('liste_apprenant', ['tab_visiteurs' => $result,'tab_appr'=>$ids]);
+        return view('liste_apprenant', ['tab_visiteurs' => $modelVisiteur->findAll(),'tab_appr'=>$result]);
     }
     public function ajouter()
     {
@@ -72,5 +64,30 @@ class Apprenant extends BaseController
         }
 
         return redirect()->to(base_url('apprenant'));
+    }
+
+    public function recherche()
+    {
+        $viewData=[];
+        $model=new apprenantModel();
+        $visiteurModel=new visiteurModel();
+        if( isset($_POST['search']))
+        {
+            if( $this->validate([
+                'search'=>'required',
+                ]) )
+                {
+                    $donnees=$model->recherche($_POST['search']);
+                    $viewData['tab_appr']=$donnees;
+                    $viewData['tab_visiteurs']=$visiteurModel->findAll();
+                }
+                else
+                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+        }
+        else
+            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+
+
+        return view('liste_apprenant',$viewData);
     }
 }

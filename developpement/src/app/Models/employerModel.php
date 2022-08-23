@@ -45,4 +45,34 @@ class employerModel extends Model
         $elt = $this->find($id);
         return $elt[$attr];
     }
+
+    public function recherche($chaine, $type)
+    {
+        //rechreche en fonction de toutes les colonnes 
+        /* -- params --
+           $chaine: element a rechercher
+        */
+        if ((int)$type == -1) {
+            $rst = $this->db->query("SELECT * FROM mouvement_argent WHERE
+            type='Sortie' AND ( date like '%$chaine%' OR somme LIKE '%$chaine%' OR
+            motif like '%$chaine%' );
+            ");
+
+            return $rst->getResultArray();
+        } else if ((int)$type == 1) {
+            $rst = $this->db->query("SELECT * FROM mouvement_argent WHERE
+            type='Entrée' AND ( date like '%$chaine%' OR somme LIKE '%$chaine%' OR
+            motif like '%$chaine%' );
+            ");
+
+            return $rst->getResultArray();
+        } else {
+            $rst = $this->db->query("SELECT * FROM mouvement_argent WHERE
+            date like %$chaine% OR somme like %$chaine% OR
+            motif like %$chaine% ;
+            ");
+
+            return $rst->getResultArray();
+        }
+    }
 }

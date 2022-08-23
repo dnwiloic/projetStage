@@ -38,4 +38,27 @@ class Ouvrage extends BaseController
         }
         return redirect()->to(base_url('ouvrage'));
     }
+
+    public function recherche()
+    {
+        $viewData=[];
+        $model=new ouvrageModel();
+        if( isset($_POST['search']))
+        {
+            if( $this->validate([
+                'search'=>'required',
+                ]) )
+                {
+                    $donnees=$model->recherche($_POST['search']);
+                    $viewData['tab_livre']=$donnees;
+                }
+                else
+                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+        }
+        else
+            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+
+
+        return view('liste_ouvrage',$viewData);
+    }
 }

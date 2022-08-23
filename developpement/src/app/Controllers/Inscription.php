@@ -15,29 +15,20 @@ class Inscription extends BaseController
         $mAppr=new apprenantModel();
         $mFormation=new formationModel();
         $mVisiteur=new visiteurModel();
-        $tab_appr=$mAppr->get_infos_apprs();
-        $tab_formation=$mFormation->findAll();
-        $tab_inscription=$mInscription->findAll();
-        
-        foreach($tab_inscription as $key=>$inscription){
-            $tab_inscription[$key]['prenom']=$mVisiteur->get_attr_of($inscription['id_apprenant'],'prenom');
-            $tab_inscription[$key]['nomV']=$mVisiteur->get_attr_of($inscription['id_apprenant'],'nom');
-            $tab_inscription[$key]['nomF']=$mFormation->get_attr_of($inscription['id_formation'],'nom');//nom de la formation
-            $tab_inscription[$key]['montant_restant']=(int)$inscription['cout_total'] - (int)$inscription['montant_paye'];
-        }
+        $tab_appr=$mAppr->get_apprenants();
+        $tab_formation=$mFormation->get_formations();
+        $tab_inscription=$mInscription->get_inscriptions();
 
         //tri
         if($typeTri=="desc"){
             array_sort_by_multiple_keys($tab_inscription,[
                 $col=>SORT_DESC,
-                'prenom'=>SORT_DESC
             ]);
         }
         else
         {
             array_sort_by_multiple_keys($tab_inscription,[
                 $col=>SORT_ASC,
-                'prenom'=>SORT_ASC
             ]);
         }
 
@@ -77,5 +68,32 @@ class Inscription extends BaseController
             //erreur
         }
         return redirect()->to(base_url('inscription'));
+    }
+
+    public function recherche()
+    {
+        $viewData=[];
+        $model=new inscriptionModel();
+        $mAppr=new apprenantModel();
+        $mFormation=new formationModel();
+        if( isset($_POST['search']))
+        {
+            if( $this->validate([
+                'search'=>'required',
+                ]) )
+                {
+                    $donnees=$model->recherche($_POST['search']);
+                    $viewData['tab_inscription']=$donnees;
+                    $viewData['tab_formation']=$mFormation->get_formations();
+                    $viewData['tab_appr']=$mAppr->get_apprenants();
+                }
+                else
+                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+        }
+        else
+            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+
+
+        return view('liste_inscription',$viewData);
     }
 }

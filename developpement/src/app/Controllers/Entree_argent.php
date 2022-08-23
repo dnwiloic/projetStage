@@ -66,7 +66,6 @@ class Entree_argent extends BaseController
                 'search'=>'required',
                 ]) )
                 {
-                    echo "recherchons le mvt";
                     $donnees=$model->recherche($_POST['search'],$this->type);
                     $viewData['tab']=$donnees;
                 }

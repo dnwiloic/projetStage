@@ -8,8 +8,8 @@ include_once("entete.php");
         var tab_arg = <?php print json_encode($tab) ?>;
         console.log(tab_arg);
 
-        var controler='entree_argent';
-        var base_url=<?php print json_encode(base_url()) ?>;
+        var controler = 'entree_argent';
+        var base_url = <?php print json_encode(base_url()) ?>;
     </script>
 
     <?php include("navbar.php") ?>
@@ -20,6 +20,11 @@ include_once("entete.php");
         <div class="list col-span-6">
 
             <h1 class="titre-tableau"> Liste des emtrées d'argent </h1>
+            <!-- inclusion de la zone de recherche  -->
+            <?php
+            $controller = "entree_argent";
+            include("searchZone.php")
+            ?>
             <button class="open-popup btn-ajouter" popup_to_open="p_form_visiteur">Ajouter</button>
             <div>
                 <span>nombre d'elements: <span id="nbr_elt" class="text-blue-700"></span></span>
@@ -38,7 +43,7 @@ include_once("entete.php");
                         <td><?php echo $arg['date'] ?></td>
                         <td><?php echo $arg['somme']; ?></td>
                         <td><?php echo $arg['motif']; ?></td>
-                        
+
                         <td><a href='<?= base_url(); ?>/connexion/'></a></td>
                     </tr>
                 <?php
@@ -65,7 +70,7 @@ include_once("entete.php");
                 </div>
                 <div>
                     <label for="motif" class="requis">Motif</label>
-                    <input type="text"  class="textfield" name="motif" id="motif" placeholder="..." required>
+                    <input type="text" class="textfield" name="motif" id="motif" placeholder="..." required>
                 </div>
             </div>
             <div class="form-footer">
@@ -78,9 +83,9 @@ include_once("entete.php");
         </form>
     </div>
 
-    <script src="<?= base_url();?>/assets/script/trie.js"></script>
-    <script src="<?= base_url();?>/assets/script/visite.js"></script>
-    <script src="<?= base_url();?>/assets/script/popup.js"></script>
+    <script src="<?= base_url(); ?>/assets/script/trie.js"></script>
+    <script src="<?= base_url(); ?>/assets/script/visite.js"></script>
+    <script src="<?= base_url(); ?>/assets/script/popup.js"></script>
     <script type="text/javascript">
         document.getElementById("b_cout_total").addEventListener('click', function(event) {
             console.log("click");

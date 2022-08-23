@@ -30,4 +30,26 @@ class inscriptionModel extends Model
         $elt=$this->find($id);
         return $elt[$attr];
     }
+
+    public function get_inscriptions(){
+        $rqt=$this->db->query('CALL get_v_inscription()');
+        return $rqt->getResultArray();
+    }
+
+    public function recherche($chaine)
+    {
+        //rechreche en fonction de toutes les colonnes 
+        /* -- params --
+           $chaine: element a rechercher
+        */
+        $rst = $this->db->query("SELECT * FROM v_inscription WHERE
+        nomA like '%$chaine%' OR prenomA LIKE '%$chaine%' OR
+        nomF like '%$chaine%' OR montant_paye LIKE '%$chaine%' OR 
+        ABS(cout_total+montant_paye) like '%$chaine%' OR date_inscription LIKE '%$chaine%' OR 
+        date_debut like '%$chaine%' OR date_fin LIKE '%$chaine%' OR 
+        commentaire LIKE '%$chaine%';
+        ");
+
+        return $rst->getResultArray();
+    }
 }

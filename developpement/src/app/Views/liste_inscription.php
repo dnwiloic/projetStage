@@ -23,6 +23,11 @@ include_once("entete.php");
         <div class="list col-span-6">
 
             <h1 class="titre-tableau"> Inscriptions </h1>
+            <!-- inclusion de la zone de recherche  -->
+            <?php
+            $controller = "inscription";
+            include("searchZone.php")
+            ?>
             <button class="open-popup btn-ajouter" popup_to_open="p_form_visiteur">Ajouter</button>
             <div>
                 <span>nombre d'elements: <span id="nbr_elt" class="text-blue-700"></span></span>
@@ -44,10 +49,10 @@ include_once("entete.php");
                 foreach ($tab_inscription as $inscription) {
                 ?>
                     <tr>
-                        <td><?php echo $inscription['prenom']." ".$inscription['nomV']; ?></td>
+                        <td><?php echo $inscription['prenomA']." ".$inscription['nomA']; ?></td>
                         <td><?php echo $inscription['nomF']; ?></td>
                         <td><?php echo $inscription['montant_paye']; ?></td>
-                        <td><?php echo $inscription['montant_restant'] ?></td>
+                        <td><?php echo (int) $inscription['cout_total'] - (int) $inscription['montant_paye'];?></td>
                         <td><?php echo $inscription['date_inscription']; ?></td>
                         <td><?php echo $inscription['date_debut']; ?></td>
                         <td><?php echo $inscription['date_fin']; ?></td>

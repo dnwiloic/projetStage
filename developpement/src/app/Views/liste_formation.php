@@ -19,6 +19,11 @@ include_once("entete.php");
         <div class="list col-span-6">
 
             <h1 class="titre-tableau"> Formations </h1>
+            <!-- inclusion de la zone de recherche  -->
+            <?php
+            $controller = "formation";
+            include("searchZone.php")
+            ?>
             <button class="open-popup btn-ajouter" popup_to_open="p_form_formation">Ajouter</button>
             <div>
                 <span>nombre d'elements: <span id="nbr_elt" class="text-blue-700"></span></span>
@@ -42,7 +47,7 @@ include_once("entete.php");
                                     <td><?php echo $formation['nom']; ?></td>
                                     <td><?php echo $formation['prix']; ?></td>
                                     <td><?php echo $formation['duree']." "; ?>semaines </td>
-                                    <td><?php echo $formation['formateur']; ?></td>
+                                    <td><?php echo $formation['nom_formateur'] . " " . $formation['prenom']; ?></td>
                                     <td><?php echo $formation['commentaire']; ?></td>
                                     <td><a href='<?= base_url(); ?>/connexion/'></a></td>
                                 </tr>

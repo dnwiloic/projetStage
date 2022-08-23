@@ -13,7 +13,7 @@ class Formateur extends BaseController
         $modelVisiteur=new visiteurModel();
 
         $result=$modelVisiteur->findAll();
-        $ids=$modelFormateur->findColumn('id_visiteur');
+        $formateurs=$modelFormateur->get_formateurs();
         foreach($result as $key=>$elt)
         {
             $result[$key]['id_visiteur']=$elt['id'];
@@ -31,7 +31,7 @@ class Formateur extends BaseController
                 $col=>SORT_ASC
             ]);
         }
-        return view('liste_formateur',['tab_visiteurs'=>$result,'tab_formt'=>$ids]);
+        return view('liste_formateur',['tab_visiteurs'=>$result,'tab_formt'=>$formateurs]);
     }
     public function ajouter()
     {
@@ -71,5 +71,32 @@ class Formateur extends BaseController
         }
 
         return redirect()->to(base_url('formateur'));
+    }
+
+    
+
+    public function recherche()
+    {
+        $viewData=[];
+        $model=new formateurModel();
+        $modelVisiteur=new visiteurModel();
+        if( isset($_POST['search']))
+        {
+            if( $this->validate([
+                'search'=>'required',
+                ]) )
+                {
+                    $donnees=$model->recherche($_POST['search']);
+                    $viewData['tab_formt']=$donnees;
+                    $viewData['tab_visiteurs']=$modelVisiteur->findAll();
+                }
+                else
+                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+        }
+        else
+            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+
+
+        return view('liste_formateur',$viewData);
     }
 }

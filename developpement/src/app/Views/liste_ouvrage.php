@@ -19,6 +19,11 @@ include_once("entete.php");
         <div class="list col-span-6">
 
             <h1 class="titre-tableau"> Liste des livres </h1>
+            <!-- inclusion de la zone de recherche  -->
+            <?php
+            $controller = "ouvrage";
+            include("searchZone.php")
+            ?>
             <button class="open-popup btn-ajouter" popup_to_open="p_form_formation">Ajouter</button>
             <div>
                 <span>nombre d'elements: <span id="nbr_elt" class="text-blue-700"></span></span>

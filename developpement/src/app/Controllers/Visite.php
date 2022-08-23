@@ -11,34 +11,14 @@ class Visite extends BaseController
     public function index( $col='date',$typeTri='desc')
     {
         $visiteModel = new visiteModel();
-        $empModel = new employerModel();
         $visiteurModel = new visiteurModel();
         $visiteurs=$visiteurModel->findAll();
         foreach($visiteurs as $key=>$vst)
         {
             $visiteurs[$key]['id_visiteur']=$vst['id'];
         } 
-        $tab = array();
-        $toShow = array();
-        $visiteModel->setReturnType('array');
-        $visites = $visiteModel->findAll();
         
-        foreach($visites as $visite)
-        {
-            $toShow['id']=$visite['id'];
-            $toShow['id_visiteur']=$visite['id_visiteur'];
-            $toShow['employer']=$empModel->get_attr_of((int)$visite['id_employer'],"login");
-            $toShow['visiteur']=$visiteurModel->get_attr_of((int)$visite['id_visiteur'],"nom")." ".$visiteurModel->get_attr_of((int)$visite['id_visiteur'],"prenom");
-            $toShow['nom']=$visiteurModel->get_attr_of((int)$visite['id_visiteur'],"nom");
-            $toShow['prenom']=$visiteurModel->get_attr_of((int)$visite['id_visiteur'],"prenom");
-            $toShow['cni']=$visiteurModel->get_attr_of((int)$visite['id_visiteur'],"cni");
-            $toShow['tel']=$visiteurModel->get_attr_of((int)$visite['id_visiteur'],"tel");
-            $toShow['date']=$visite['date'];
-            $toShow['heure_debut']=$visite['heure_debut'];
-            $toShow['heure_fin']=$visite['heure_fin'];
-            $toShow['raison']=$visite['raison'];
-            array_push($tab, $toShow );
-        }
+        $tab=$visiteModel->get_visites();
 
         if($typeTri=="desc"){
             array_sort_by_multiple_keys($tab,[
@@ -98,5 +78,29 @@ class Visite extends BaseController
         return redirect()->to(base_url('visite'));
     }
 
+    public function recherche()
+    {
+        $viewData=[];
+        $model=new visiteModel();
+        $modelVisiteur= new visiteurModel();
+        if( isset($_POST['search']))
+        {
+            if( $this->validate([
+                'search'=>'required',
+                ]) )
+                {
+                    $donnees=$model->recherche($_POST['search']);
+                    $viewData['visites']=$donnees;
+                    $viewData['tab_visiteur']=$modelVisiteur->findAll();
+                }
+                else
+                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+        }
+        else
+            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+
+
+        return view('liste_visite',$viewData);
+    }
 }
 

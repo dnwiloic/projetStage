@@ -17,6 +17,11 @@ include_once("entete.php");
         <div class="list col-span-6">
 
             <span class="titre-tableau"> Liste des visites</span>
+            <!-- inclusion de la zone de recherche  -->
+            <?php
+            $controller = "visite";
+            include("searchZone.php")
+            ?>
             <button class="open-popup btn-ajouter" popup_to_open="p_form_visite">Ajouter</button>
             <div>
                 <span>nombre d'elements: <span class="text-blue-600" id="nbr_elt"></span> </span>
@@ -42,8 +47,8 @@ include_once("entete.php");
                 foreach ($visites as $visite) {
                 ?>
                     <tr>
-                        <td><?php echo $visite['visiteur']; ?></td>
-                        <td><?php echo $visite['employer']; ?></td>
+                        <td><?php echo $visite['nom'] . " " . $visite['prenom']; ?></td>
+                        <td><?php echo $visite['login']; ?></td>
                         <td><?php echo $visite['raison']; ?></td>
                         <td><?php echo $visite['date']; ?></td>
                         <td><?php echo $visite['heure_debut']; ?></td>

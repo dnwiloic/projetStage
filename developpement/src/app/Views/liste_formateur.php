@@ -19,6 +19,11 @@ include_once("entete.php");
         <div class="list col-span-6">
 
             <h1 class="titre-tableau"> Liste des Enseignants </h1>
+            <!-- inclusion de la zone de recherche  -->
+            <?php
+            $controller = "formateur";
+            include("searchZone.php")
+            ?>
             <button class="open-popup btn-ajouter" popup_to_open="p_form_visiteur">Ajouter</button>
             <div>
                 <span>nombre d'elements: <span id="nbr_elt" class="text-blue-700"></span></span>
@@ -31,18 +36,16 @@ include_once("entete.php");
                     <th >Actions</th>
                 </tr>
                 <?php
-                foreach ($tab_visiteurs as $visiteur) {
-                    if (in_array($visiteur['id'], $tab_formt)) {
-                ?>
+                foreach ($tab_formt as $formateur) {
+                    ?>
                         <tr>
-                            <td><?php echo $visiteur['nom'] . " " . $visiteur['prenom']; ?></td>
-                            <td><?php echo $visiteur['cni']; ?></td>
-                            <td><?php echo $visiteur['tel']; ?></td>
+                            <td><?php echo $formateur['nom'] . " " . $formateur['prenom']; ?></td>
+                            <td><?php echo $formateur['cni']; ?></td>
+                            <td><?php echo $formateur['tel']; ?></td>
                             <td><a href='<?= base_url(); ?>/connexion/'>connexion</a></td>
                         </tr>
                 <?php
                     }
-                }
                 ?>
             </table>
         </div>

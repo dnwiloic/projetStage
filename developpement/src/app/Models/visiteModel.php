@@ -30,4 +30,26 @@ class visiteModel extends Model
         $this->returnType=$newType;
     }
 
+    public function get_visites(){
+        $rqt=$this->db->query('CALL get_visites()');
+        return $rqt->getResultArray();
+    }
+
+    public function recherche($chaine)
+    {
+        //rechreche en fonction de toutes les colonnes 
+        /* -- params --
+           $chaine: element a rechercher
+        */
+        
+        $rst = $this->db->query("SELECT * FROM v_visite WHERE
+        nom like '%$chaine%' OR prenom like '%$chaine%' OR
+        login like '%$chaine%' OR raison like '%$chaine%' OR
+        date like '%$chaine%' OR heure_debut like '%$chaine%'
+        OR heure_fin like '%$chaine%';
+        ");
+
+        return $rst->getResultArray();
+        
+    }
 }

@@ -11,14 +11,8 @@ class Formation extends BaseController
     {
         $mFormateur=new formateurModel();
         $mformation=new formationModel();
-        $formateurs=$mFormateur->get_infos_formateurs();//retourne un tableau donc les index sont des id
-        $formations=$mformation->findAll();
-        $liste=array();
-        foreach($formations as $key=>$form)
-        {
-            $formateur=$formateurs[$form['id_formateur']];
-            $formations[$key]['formateur']=$formateur['prenom']." ".$formateur['nom'];
-        }
+        $formateurs=$mFormateur->get_formateurs();
+        $formations=$mformation->get_formations();
 
         //tri
         if($typeTri=="desc"){
@@ -60,5 +54,30 @@ class Formation extends BaseController
         }
 
         return redirect()->to(base_url('formation'));
+    }
+
+    public function recherche()
+    {
+        $viewData=[];
+        $model=new formationModel();
+        $mFormateur=new formateurModel();
+        if( isset($_POST['search']))
+        {
+            if( $this->validate([
+                'search'=>'required',
+                ]) )
+                {
+                    $donnees=$model->recherche($_POST['search']);
+                    $viewData['tab_formation']=$donnees;
+                    $viewData['tab_formateur']=$mFormateur->get_formateurs();
+                }
+                else
+                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+        }
+        else
+            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+
+
+        return view('liste_formation',$viewData);
     }
 }

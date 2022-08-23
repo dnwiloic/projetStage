@@ -68,15 +68,15 @@ class mouvArgentModel extends Model
         */
         if ((int)$type == -1) {
             $rst = $this->db->query("SELECT * FROM mouvement_argent WHERE
-            type='Sortie' AND ( date like %$chaine% OR somme like %$chaine% OR
-            motif like %$chaine% );
+            type='Sortie' AND ( date like '%$chaine%' OR somme LIKE '%$chaine%' OR
+            motif like '%$chaine%' );
             ");
 
             return $rst->getResultArray();
         } else if ((int)$type == 1) {
             $rst = $this->db->query("SELECT * FROM mouvement_argent WHERE
-            type='Entrée' AND ( date like %$chaine% OR somme like %$chaine% OR
-            motif like %$chaine% );
+            type='Entrée' AND ( date like '%$chaine%' OR somme LIKE '%$chaine%' OR
+            motif like '%$chaine%' );
             ");
 
             return $rst->getResultArray();

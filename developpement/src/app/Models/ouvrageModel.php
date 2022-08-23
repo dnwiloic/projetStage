@@ -32,4 +32,20 @@ class ouvrageModel extends Model
         $elt=$this->find($id);
         return $elt[$attr];
     }
+
+    public function recherche($chaine)
+    {
+        //rechreche en fonction de toutes les colonnes 
+        /* -- params --
+           $chaine: element a rechercher
+        */
+       
+        $rst = $this->db->query("SELECT * FROM ouvrage WHERE
+        titre like '%$chaine%' OR nom_auteur like '%$chaine%' 
+        OR nombre_de_page like '%$chaine%' OR
+        edition like '%$chaine%' ;
+        ");
+
+        return $rst->getResultArray();
+    }
 }

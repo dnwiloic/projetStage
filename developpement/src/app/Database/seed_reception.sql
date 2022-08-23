@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jun 12, 2022 at 02:21 PM
+-- Generation Time: Aug 24, 2022 at 08:39 AM
 -- Server version: 8.0.27
 -- PHP Version: 7.4.26
 
@@ -20,6 +20,52 @@ SET time_zone = "+00:00";
 --
 -- Database: `seed_reception`
 --
+
+DELIMITER $$
+--
+-- Procedures
+--
+DROP PROCEDURE IF EXISTS `add_entree_argent`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `add_entree_argent` (IN `p_date` DATE, IN `p_somme` INT, IN `p_motif` VARCHAR(255) CHARSET utf8)  INSERT INTO mouvement_argent(date,somme,motif,type) VALUES(p_date,p_somme,p_motif,'Entrée')$$
+
+DROP PROCEDURE IF EXISTS `add_sortie_argent`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `add_sortie_argent` (IN `p_date` DATE, IN `p_somme` INT, IN `p_motif` VARCHAR(255) CHARSET utf8)  INSERT INTO mouvement_argent(date,somme,motif,type) VALUES(p_date,p_somme,p_motif,'Sortie')$$
+
+DROP PROCEDURE IF EXISTS `get_abn_eligible`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_abn_eligible` ()  SELECT * FROM visiteur_abonne WHERE montant_verse=cout_abonnement
+AND date_expiration > now()$$
+
+DROP PROCEDURE IF EXISTS `get_entrees_argent`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_entrees_argent` ()  SELECT * from mouvement_argent
+WHERE type = 'Entrée'$$
+
+DROP PROCEDURE IF EXISTS `get_sorties_argent`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_sorties_argent` ()  SELECT * FROM mouvement_argent
+WHERE type="Sortie"$$
+
+DROP PROCEDURE IF EXISTS `get_visites`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_visites` ()  SELECT nom, prenom, login, raison, date, heure_debut, heure_fin FROM v_visite$$
+
+DROP PROCEDURE IF EXISTS `get_visiteurs_abonnes`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_visiteurs_abonnes` ()  SELECT id_visiteur,nom, cni, tel ,prenom ,montant_verse, cout_abonnement,date_inscription,date_expiration
+,carte_membre_genere from visiteur_abonne$$
+
+DROP PROCEDURE IF EXISTS `get_visiteurs_apprenants`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_visiteurs_apprenants` ()  SELECT * from visiteur_apprenant$$
+
+DROP PROCEDURE IF EXISTS `get_visiteurs_formateurs`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_visiteurs_formateurs` ()  SELECT id_visiteur,nom, cni, tel ,prenom from visiteur_abonne$$
+
+DROP PROCEDURE IF EXISTS `get_v_emprunt`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_v_emprunt` ()  SELECT id ,nom ,prenom, titre,nom_auteur, date_emprunt, date_retour_prevu, date_retour_effectif, feelback FROM v_emprunt$$
+
+DROP PROCEDURE IF EXISTS `get_v_formations`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_v_formations` ()  SELECT id, nom, prix, duree, commentaire, nom_formateur, prenom FROM v_formation$$
+
+DROP PROCEDURE IF EXISTS `get_v_inscription`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_v_inscription` ()  SELECT id, nomA, prenomA, nomF,montant_paye, cout_total,date_inscription, date_debut, date_fin, commentaire FROM v_inscription$$
+
+DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -45,6 +91,7 @@ CREATE TABLE IF NOT EXISTS `abonne` (
 INSERT INTO `abonne` (`id_visiteur`, `montant_verse`, `cout_abonnement`, `date_inscription`, `date_expiration`, `carte_membre_genere`) VALUES
 (1, 15000, 15000, '2022-06-09', '2023-06-09', 1),
 (45, 10000, 15000, '2022-06-06', '2023-06-06', 1),
+(46, 10000, 15000, '2022-06-22', '2023-06-22', 1),
 (47, 10000, 0, '2022-06-06', '2023-06-06', 0),
 (50, 4000, 10000, '2022-06-04', '2023-06-04', 0);
 
@@ -86,14 +133,15 @@ CREATE TABLE IF NOT EXISTS `employer` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `login` (`login`),
   KEY `id_visiteur` (`id_visiteur`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `employer`
 --
 
 INSERT INTO `employer` (`id`, `id_visiteur`, `login`, `password`) VALUES
-(1, 1, 'seed', '5a7c4d004bb7aaa3c17264f9a1d035668b17d8ae');
+(1, 1, 'seed', '21602161fea158a8f0a817031d0ecc1d3727347c'),
+(2, 45, '', '');
 
 -- --------------------------------------------------------
 
@@ -201,6 +249,32 @@ INSERT INTO `inscription` (`id`, `id_apprenant`, `id_formation`, `montant_paye`,
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `mouvement_argent`
+--
+
+DROP TABLE IF EXISTS `mouvement_argent`;
+CREATE TABLE IF NOT EXISTS `mouvement_argent` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `date` date NOT NULL,
+  `somme` int NOT NULL,
+  `motif` varchar(50) NOT NULL,
+  `type` enum('Entrée','Sortie') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `mouvement_argent`
+--
+
+INSERT INTO `mouvement_argent` (`id`, `date`, `somme`, `motif`, `type`) VALUES
+(1, '2022-08-09', 15000, 'abonnement', 'Entrée'),
+(2, '2022-08-09', 2000, 'Eau potable', 'Sortie'),
+(3, '2022-08-10', 15000, 'abonnement', 'Entrée'),
+(5, '2022-08-10', 10000, 'transport pour courses', 'Sortie');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `ouvrage`
 --
 
@@ -213,14 +287,16 @@ CREATE TABLE IF NOT EXISTS `ouvrage` (
   `nombre_de_page` int NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `titre` (`titre`,`nom_auteur`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `ouvrage`
 --
 
 INSERT INTO `ouvrage` (`id`, `titre`, `nom_auteur`, `edition`, `nombre_de_page`) VALUES
-(1, 'cdshjsc', 'dsdkjn', 'jdcsj', 45);
+(1, 'cdshjsc', 'dsdkjn', 'jdcsj', 45),
+(2, 'Sous la cendre le feu', 'Eveline', '2002', 245),
+(3, 'Les secrets', 'Eker', '2001', 200);
 
 -- --------------------------------------------------------
 
@@ -240,7 +316,7 @@ CREATE TABLE IF NOT EXISTS `visite` (
   PRIMARY KEY (`id`),
   KEY `id_employer` (`id_employer`),
   KEY `id_visiteur` (`id_visiteur`)
-) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `visite`
@@ -251,7 +327,9 @@ INSERT INTO `visite` (`id`, `id_visiteur`, `id_employer`, `date`, `heure_debut`,
 (40, 1, 1, '2022-05-27', '21:57:00', '22:58:00', 'recuperation de coli'),
 (41, 1, 1, '2022-05-27', '22:25:00', '22:28:00', 'dd'),
 (42, 45, 1, '2022-06-02', '17:36:00', '19:36:00', 'visite Nr Dnjomou'),
-(43, 47, 1, '2022-06-07', '12:15:00', '15:25:00', 'vv');
+(43, 47, 1, '2022-06-07', '12:15:00', '15:25:00', 'vv'),
+(44, 45, 1, '2022-06-15', '11:57:00', '13:59:00', 'rien'),
+(45, 46, 1, '2022-06-17', '17:58:00', NULL, '');
 
 -- --------------------------------------------------------
 
@@ -281,6 +359,217 @@ INSERT INTO `visiteur` (`id`, `nom`, `prenom`, `cni`, `tel`) VALUES
 (46, 'Moou', 'jean', 'hsvericcoc', 7855565844744),
 (47, 'Kakeu', 'Curtis', 'fereruf68546', 21688564),
 (50, 'noula', 'manou', '48ff9jhefr56', 554886877);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `visiteur_abonne`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `visiteur_abonne`;
+CREATE TABLE IF NOT EXISTS `visiteur_abonne` (
+`id` int unsigned
+,`nom` varchar(25)
+,`prenom` varchar(25)
+,`cni` varchar(50)
+,`tel` bigint
+,`id_visiteur` int unsigned
+,`montant_verse` int unsigned
+,`cout_abonnement` int unsigned
+,`date_inscription` date
+,`date_expiration` date
+,`carte_membre_genere` tinyint(1)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `visiteur_apprenant`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `visiteur_apprenant`;
+CREATE TABLE IF NOT EXISTS `visiteur_apprenant` (
+`id` int unsigned
+,`nom` varchar(25)
+,`prenom` varchar(25)
+,`cni` varchar(50)
+,`tel` bigint
+,`matricule` varchar(20)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `visiteur_formateur`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `visiteur_formateur`;
+CREATE TABLE IF NOT EXISTS `visiteur_formateur` (
+`id` int unsigned
+,`nom` varchar(25)
+,`prenom` varchar(25)
+,`cni` varchar(50)
+,`tel` bigint
+,`id_visiteur` int unsigned
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `v_emprunt`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `v_emprunt`;
+CREATE TABLE IF NOT EXISTS `v_emprunt` (
+`id` int unsigned
+,`id_ouvrage` int unsigned
+,`id_abonne` int unsigned
+,`date_emprunt` date
+,`date_retour_prevu` date
+,`date_retour_effectif` date
+,`feelback` varchar(50)
+,`titre` varchar(25)
+,`nom_auteur` varchar(25)
+,`edition` varchar(10)
+,`nombre_de_page` int
+,`nom` varchar(25)
+,`prenom` varchar(25)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `v_formation`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `v_formation`;
+CREATE TABLE IF NOT EXISTS `v_formation` (
+`id` int unsigned
+,`nom` varchar(25)
+,`prix` int unsigned
+,`duree` int unsigned
+,`commentaire` text
+,`id_formateur` int unsigned
+,`nom_formateur` varchar(25)
+,`prenom` varchar(25)
+,`cni` varchar(50)
+,`tel` bigint
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `v_inscription`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `v_inscription`;
+CREATE TABLE IF NOT EXISTS `v_inscription` (
+`id` int unsigned
+,`id_apprenant` int unsigned
+,`id_formation` int unsigned
+,`montant_paye` int unsigned
+,`cout_total` int unsigned
+,`date_inscription` date
+,`date_debut` date
+,`date_fin` date
+,`commentaire` text
+,`nomA` varchar(25)
+,`prenomA` varchar(25)
+,`nomF` varchar(25)
+,`prixF` int unsigned
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `v_visite`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `v_visite`;
+CREATE TABLE IF NOT EXISTS `v_visite` (
+`nom` varchar(25)
+,`prenom` varchar(25)
+,`cni` varchar(50)
+,`tel` bigint
+,`login` varchar(30)
+,`id` int unsigned
+,`id_visiteur` int unsigned
+,`id_employer` int unsigned
+,`date` date
+,`heure_debut` time
+,`heure_fin` time
+,`raison` text
+);
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `visiteur_abonne`
+--
+DROP TABLE IF EXISTS `visiteur_abonne`;
+
+DROP VIEW IF EXISTS `visiteur_abonne`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `visiteur_abonne`  AS SELECT `visiteur`.`id` AS `id`, `visiteur`.`nom` AS `nom`, `visiteur`.`prenom` AS `prenom`, `visiteur`.`cni` AS `cni`, `visiteur`.`tel` AS `tel`, `abonne`.`id_visiteur` AS `id_visiteur`, `abonne`.`montant_verse` AS `montant_verse`, `abonne`.`cout_abonnement` AS `cout_abonnement`, `abonne`.`date_inscription` AS `date_inscription`, `abonne`.`date_expiration` AS `date_expiration`, `abonne`.`carte_membre_genere` AS `carte_membre_genere` FROM (`visiteur` join `abonne`) WHERE (`visiteur`.`id` = `abonne`.`id_visiteur`) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `visiteur_apprenant`
+--
+DROP TABLE IF EXISTS `visiteur_apprenant`;
+
+DROP VIEW IF EXISTS `visiteur_apprenant`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `visiteur_apprenant`  AS SELECT `visiteur`.`id` AS `id`, `visiteur`.`nom` AS `nom`, `visiteur`.`prenom` AS `prenom`, `visiteur`.`cni` AS `cni`, `visiteur`.`tel` AS `tel`, `apprenant`.`matricule` AS `matricule` FROM (`visiteur` join `apprenant`) WHERE (`visiteur`.`id` = `apprenant`.`id_visiteur`) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `visiteur_formateur`
+--
+DROP TABLE IF EXISTS `visiteur_formateur`;
+
+DROP VIEW IF EXISTS `visiteur_formateur`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `visiteur_formateur`  AS SELECT `visiteur`.`id` AS `id`, `visiteur`.`nom` AS `nom`, `visiteur`.`prenom` AS `prenom`, `visiteur`.`cni` AS `cni`, `visiteur`.`tel` AS `tel`, `formateur`.`id_visiteur` AS `id_visiteur` FROM (`visiteur` join `formateur`) WHERE (`visiteur`.`id` = `formateur`.`id_visiteur`) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `v_emprunt`
+--
+DROP TABLE IF EXISTS `v_emprunt`;
+
+DROP VIEW IF EXISTS `v_emprunt`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_emprunt`  AS SELECT `emprunt`.`id` AS `id`, `emprunt`.`id_ouvrage` AS `id_ouvrage`, `emprunt`.`id_abonne` AS `id_abonne`, `emprunt`.`date_emprunt` AS `date_emprunt`, `emprunt`.`date_retour_prevu` AS `date_retour_prevu`, `emprunt`.`date_retour_effectif` AS `date_retour_effectif`, `emprunt`.`feelback` AS `feelback`, `ouvrage`.`titre` AS `titre`, `ouvrage`.`nom_auteur` AS `nom_auteur`, `ouvrage`.`edition` AS `edition`, `ouvrage`.`nombre_de_page` AS `nombre_de_page`, `visiteur`.`nom` AS `nom`, `visiteur`.`prenom` AS `prenom` FROM ((`emprunt` join `ouvrage`) join `visiteur`) WHERE ((`emprunt`.`id_ouvrage` = `ouvrage`.`id`) AND (`emprunt`.`id_abonne` = `visiteur`.`id`)) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `v_formation`
+--
+DROP TABLE IF EXISTS `v_formation`;
+
+DROP VIEW IF EXISTS `v_formation`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_formation`  AS SELECT `formation`.`id` AS `id`, `formation`.`nom` AS `nom`, `formation`.`prix` AS `prix`, `formation`.`duree` AS `duree`, `formation`.`commentaire` AS `commentaire`, `formation`.`id_formateur` AS `id_formateur`, `visiteur`.`nom` AS `nom_formateur`, `visiteur`.`prenom` AS `prenom`, `visiteur`.`cni` AS `cni`, `visiteur`.`tel` AS `tel` FROM (`visiteur` join `formation`) WHERE (`visiteur`.`id` = `formation`.`id_formateur`) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `v_inscription`
+--
+DROP TABLE IF EXISTS `v_inscription`;
+
+DROP VIEW IF EXISTS `v_inscription`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_inscription`  AS SELECT `inscription`.`id` AS `id`, `inscription`.`id_apprenant` AS `id_apprenant`, `inscription`.`id_formation` AS `id_formation`, `inscription`.`montant_paye` AS `montant_paye`, `inscription`.`cout_total` AS `cout_total`, `inscription`.`date_inscription` AS `date_inscription`, `inscription`.`date_debut` AS `date_debut`, `inscription`.`date_fin` AS `date_fin`, `inscription`.`commentaire` AS `commentaire`, `visiteur`.`nom` AS `nomA`, `visiteur`.`prenom` AS `prenomA`, `formation`.`nom` AS `nomF`, `formation`.`prix` AS `prixF` FROM ((`inscription` join `visiteur`) join `formation`) WHERE ((`visiteur`.`id` = `inscription`.`id_apprenant`) AND (`inscription`.`id_formation` = `formation`.`id`)) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `v_visite`
+--
+DROP TABLE IF EXISTS `v_visite`;
+
+DROP VIEW IF EXISTS `v_visite`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_visite`  AS SELECT `visiteur`.`nom` AS `nom`, `visiteur`.`prenom` AS `prenom`, `visiteur`.`cni` AS `cni`, `visiteur`.`tel` AS `tel`, `employer`.`login` AS `login`, `visite`.`id` AS `id`, `visite`.`id_visiteur` AS `id_visiteur`, `visite`.`id_employer` AS `id_employer`, `visite`.`date` AS `date`, `visite`.`heure_debut` AS `heure_debut`, `visite`.`heure_fin` AS `heure_fin`, `visite`.`raison` AS `raison` FROM ((`visiteur` join `employer`) join `visite`) WHERE ((`visiteur`.`id` = `visite`.`id_visiteur`) AND (`visite`.`id_employer` = `employer`.`id`)) ;
 
 --
 -- Constraints for dumped tables

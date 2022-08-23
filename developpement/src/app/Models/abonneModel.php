@@ -54,10 +54,29 @@ class abonneModel extends Model
         return $mVisiteur->find($colunm);
     }
 
+    public function get_abonnes(){
+        $rqt=$this->db->query('CALL get_visiteurs_abonnes()');
+        return $rqt->getResultArray();
+    }
+
     public function get_abn_eligible(){
-        $emp=$this->db->query("SELECT id_visiteur FROM abonne WHERE montant_verse=cout_abonnement
-                                    AND date_expiration > now()");
+        $emp=$this->db->query("CALL get_abn_eligible()");
         $emp=$emp->getResultArray();
         return $emp;
+    }
+
+    public function recherche($chaine)
+    {
+        //rechreche en fonction de toutes les colonnes 
+        /* -- params --
+           $chaine: element a rechercher
+        */
+        $rst = $this->db->query("SELECT * FROM visiteur_abonne WHERE
+        nom like '%$chaine%' OR prenom LIKE '%$chaine%' OR
+        montant_verse like '%$chaine%' OR cout_abonnement LIKE '%$chaine%'
+        OR date_inscription LIKE '%$chaine%' OR date_expiration LIKE '%$chaine%';
+        ");
+
+        return $rst->getResultArray();
     }
 }

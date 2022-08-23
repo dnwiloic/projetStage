@@ -16,20 +16,9 @@ class Emprunt extends BaseController
         $mAbn=new abonneModel();
         
 
-        $tab_emprunt=$mEmprunt->findAll();
-        foreach($tab_emprunt as $key=>$elt)
-        {
-            $tab_emprunt[$key]['emprunteur']=$mAbn->get_attr_of($elt['id_abonne'],'prenom')." ".$mAbn->get_attr_of($elt['id_abonne'],'nom');
-            $tab_emprunt[$key]['livre']="<strong>".$mLivre->get_attr_of($elt['id_ouvrage'],'titre')."</strong> de ".$mLivre->get_attr_of($elt['id_ouvrage'],'nom_auteur');
-        }
+        $tab_emprunt=$mEmprunt->get_emprunts();
         $tab_abn=$mAbn->get_abn_eligible();
         
-
-        foreach($tab_abn as $key=>$value)
-        {
-            $tab_abn[$key]['nom']=$mAbn->get_attr_of($value['id_visiteur'],'nom');
-            $tab_abn[$key]['prenom']=$mAbn->get_attr_of($value['id_visiteur'],'prenom');
-        }
         $tab_livre=$mLivre->findAll();
         
        //tri
@@ -78,5 +67,32 @@ class Emprunt extends BaseController
                     return redirect()->to(base_url('emprunt'));
                 }
         }
+    }
+
+    public function recherche()
+    {
+        $viewData=[];
+        $model=new empruntModel();
+        $mLivre=new ouvrageModel();
+        $mAbn=new abonneModel();
+        if( isset($_POST['search']))
+        {
+            if( $this->validate([
+                'search'=>'required',
+                ]) )
+                {
+                    $donnees=$model->recherche($_POST['search']);
+                    $viewData['tab_emprunt']=$donnees;
+                    $viewData['tab_abn']=$mAbn->get_abn_eligible();
+                    $viewData['tab_livre']=$mLivre->findAll();
+                }
+                else
+                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+        }
+        else
+            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+
+
+        return view('liste_emprunt',$viewData);
     }
 }

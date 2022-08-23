@@ -30,4 +30,26 @@ class formationModel extends Model
         $elt=$this->find($id);
         return $elt[$attr];
     }
+
+    public function get_formations(){
+        $rqt=$this->db->query('CALL get_v_formations()');
+        return $rqt->getResultArray();
+    }
+
+    public function recherche($chaine)
+    {
+        //rechreche en fonction de toutes les colonnes 
+        /* -- params --
+           $chaine: element a rechercher
+        */
+        
+        $rst = $this->db->query("SELECT * FROM v_formation WHERE
+        nom like '%$chaine%' OR prix like '%$chaine%' OR
+        duree like '%$chaine%' OR commentaire like '%$chaine%' 
+        OR nom_formateur like '%$chaine%' OR prenom like '%$chaine%';
+        ");
+
+        return $rst->getResultArray();
+        
+    }
 }

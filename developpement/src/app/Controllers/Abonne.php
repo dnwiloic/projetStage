@@ -4,7 +4,6 @@ namespace App\Controllers;
 helper('array');//chargement du heper des array. cela me permet d'utiliser array_sort_by_multiple_keys()
 
 use App\Models\abonneModel;
-use App\Models\apprenantModel;
 use App\Models\visiteurModel;
 
 class Abonne extends BaseController
@@ -13,22 +12,14 @@ class Abonne extends BaseController
     {
         $mAbonne =new abonneModel();
         $modelVisiteur = new visiteurModel();
-        $ids = $mAbonne->findColumn('id_visiteur');
         $visiteurs = $modelVisiteur->findAll();
         // on ajooute la colonne "id_visiteur" pour le visite.js puisse prendre en compte ces elements
         foreach($visiteurs as $key=>$vst)
         {
             $visiteurs[$key]['id_visiteur']=$vst['id'];
         } 
-        $abonnes= $mAbonne->findAll();
-        foreach($abonnes as $key=>$elt)
-        {
-            $abonnes[$key]['nom']=$modelVisiteur->get_attr_of($elt['id_visiteur'],'nom');
-            $abonnes[$key]['prenom']=$modelVisiteur->get_attr_of($elt['id_visiteur'],'prenom');
-            $abonnes[$key]['cni']=$modelVisiteur->get_attr_of($elt['id_visiteur'],'cni');
-            $abonnes[$key]['tel']=$modelVisiteur->get_attr_of($elt['id_visiteur'],'tel');
-        }
-
+        $abonnes= $mAbonne->get_abonnes();
+        
         //tri
         if($typeTri=="desc"){
             array_sort_by_multiple_keys($abonnes,[
@@ -111,5 +102,30 @@ class Abonne extends BaseController
         }
 
         return redirect()->to(base_url('abonne'));
+    }
+
+    public function recherche()
+    {
+        $viewData=[];
+        $model=new abonneModel();
+        $modelVisiteur=new visiteurModel();
+        if( isset($_POST['search']))
+        {
+            if( $this->validate([
+                'search'=>'required',
+                ]) )
+                {
+                    $donnees=$model->recherche($_POST['search']);
+                    $viewData['tab_abn']=$donnees;
+                    $viewData['tab_visiteurs']=$modelVisiteur->findAll();
+                }
+                else
+                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+        }
+        else
+            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+
+
+        return view('liste_abonne',$viewData); 
     }
 }

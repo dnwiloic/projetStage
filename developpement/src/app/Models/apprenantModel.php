@@ -52,9 +52,23 @@ class apprenantModel extends Model
         return $visiteur->get_id($vst);
     }
 
-    public function get_infos_apprs(){
-        $mVisiteur=new visiteurModel();
-        $colunm=$this->findColumn('id_visiteur');
-        return $mVisiteur->find($colunm);
+    public function get_apprenants(){
+        $rqt=$this->db->query('CALL get_visiteurs_apprenants()');
+        return $rqt->getResultArray();
+    }
+
+    public function recherche($chaine)
+    {
+        //rechreche en fonction de toutes les colonnes 
+        /* -- params --
+           $chaine: element a rechercher
+        */
+        $rst = $this->db->query("SELECT * FROM visiteur_apprenant WHERE
+        nom like '%$chaine%' OR prenom LIKE '%$chaine%' OR
+        cni like '%$chaine%' OR matricule LIKE '%$chaine%'
+        OR tel LIKE '%$chaine%';
+        ");
+
+        return $rst->getResultArray();
     }
 }

@@ -32,5 +32,24 @@ class empruntModel extends Model
          return $elt[$attr];
     }
 
-    
+    public function get_emprunts(){
+        $rqt=$this->db->query('CALL get_v_emprunt()');
+        return $rqt->getResultArray();
+    }
+
+    public function recherche($chaine)
+    {
+        //rechreche en fonction de toutes les colonnes 
+        /* -- params --
+           $chaine: element a rechercher
+        */
+        $rst = $this->db->query("SELECT * FROM v_emprunt WHERE
+        nom like '%$chaine%' OR prenom like '%$chaine%' OR
+        titre like '%$chaine%' OR date_emprunt like '%$chaine%' OR
+        date_retour_prevu like '%$chaine%' OR date_retour_prevu like '%$chaine%' OR
+        feelback like '%$chaine%';
+        ");
+
+        return $rst->getResultArray();
+    }
 }

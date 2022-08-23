@@ -1,0 +1,220 @@
+ERROR - 2022-08-17 00:44:48 --> Erreur de syntaxe près de '%03% OR somme like %03% OR
+            motif like %03% )' à la ligne 2
+CRITICAL - 2022-08-17 00:44:48 --> Erreur de syntaxe près de '%03% OR somme like %03% OR
+            motif like %03% )' à la ligne 2
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\mouvArgentModel.php(79): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(70): App\Models\mouvArgentModel->recherche('03', 1)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-08-17 00:46:56 --> Erreur de syntaxe près de '%'03'% OR somme like %'03'% OR
+            motif like %'03'% )' à la ligne 2
+CRITICAL - 2022-08-17 00:46:56 --> Erreur de syntaxe près de '%'03'% OR somme like %'03'% OR
+            motif like %'03'% )' à la ligne 2
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\mouvArgentModel.php(79): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(70): App\Models\mouvArgentModel->recherche('03', 1)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-08-17 00:47:43 --> Erreur de syntaxe près de '%'03'% OR somme like %'03'% OR
+            motif like %'03'% )' à la ligne 2
+CRITICAL - 2022-08-17 00:47:43 --> Erreur de syntaxe près de '%'03'% OR somme like %'03'% OR
+            motif like %'03'% )' à la ligne 2
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\mouvArgentModel.php(79): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(70): App\Models\mouvArgentModel->recherche('03', 1)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-08-17 00:48:06 --> Erreur de syntaxe près de '%'03'% OR somme=03 OR
+            motif like %'03'% )' à la ligne 2
+CRITICAL - 2022-08-17 00:48:06 --> Erreur de syntaxe près de '%'03'% OR somme=03 OR
+            motif like %'03'% )' à la ligne 2
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\mouvArgentModel.php(79): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(70): App\Models\mouvArgentModel->recherche('03', 1)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-08-17 00:48:13 --> Erreur de syntaxe près de '%'03'% OR somme=03 OR
+            motif like %'03'% )' à la ligne 2
+CRITICAL - 2022-08-17 00:48:13 --> Erreur de syntaxe près de '%'03'% OR somme=03 OR
+            motif like %'03'% )' à la ligne 2
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\mouvArgentModel.php(79): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(70): App\Models\mouvArgentModel->recherche('03', 1)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-08-17 00:48:40 --> Erreur de syntaxe près de '%'03'% OR somme=03 OR
+            motif like %'03'% )' à la ligne 2
+CRITICAL - 2022-08-17 00:48:40 --> Erreur de syntaxe près de '%'03'% OR somme=03 OR
+            motif like %'03'% )' à la ligne 2
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\mouvArgentModel.php(79): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(70): App\Models\mouvArgentModel->recherche('03', 1)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-08-17 00:49:04 --> Erreur de syntaxe près de '%03% OR somme=03 OR
+            motif like %'03'% )' à la ligne 2
+CRITICAL - 2022-08-17 00:49:04 --> Erreur de syntaxe près de '%03% OR somme=03 OR
+            motif like %'03'% )' à la ligne 2
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\mouvArgentModel.php(79): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(70): App\Models\mouvArgentModel->recherche('03', 1)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-08-17 00:49:59 --> Erreur de syntaxe près de '%03% OR somme=03 OR
+            motif like %03% )' à la ligne 2
+CRITICAL - 2022-08-17 00:49:59 --> Erreur de syntaxe près de '%03% OR somme=03 OR
+            motif like %03% )' à la ligne 2
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\mouvArgentModel.php(79): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(70): App\Models\mouvArgentModel->recherche('03', 1)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-08-17 00:51:02 --> Erreur de syntaxe près de '%03% OR somme=3 OR
+            motif like %03% )' à la ligne 2
+CRITICAL - 2022-08-17 00:51:02 --> Erreur de syntaxe près de '%03% OR somme=3 OR
+            motif like %03% )' à la ligne 2
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\mouvArgentModel.php(79): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(70): App\Models\mouvArgentModel->recherche('03', 1)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-08-17 00:51:39 --> Erreur de syntaxe près de '%anh% OR somme=3 OR
+            motif like %03% )' à la ligne 2
+CRITICAL - 2022-08-17 00:51:39 --> Erreur de syntaxe près de '%anh% OR somme=3 OR
+            motif like %03% )' à la ligne 2
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\mouvArgentModel.php(79): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(70): App\Models\mouvArgentModel->recherche('03', 1)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-08-17 00:59:36 --> Champ 'abn' inconnu dans where clause
+CRITICAL - 2022-08-17 00:59:36 --> Champ 'abn' inconnu dans where clause
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\mouvArgentModel.php(79): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Entree_argent.php(70): App\Models\mouvArgentModel->recherche('abn', 1)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Entree_argent->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entree_argent))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-08-17 01:55:34 --> Erreur de syntaxe près de '%eker% OR nom_auteur like %eker% 
+        OR nombre_de_page like %eker% OR
+   ' à la ligne 2
+CRITICAL - 2022-08-17 01:55:34 --> Erreur de syntaxe près de '%eker% OR nom_auteur like %eker% 
+        OR nombre_de_page like %eker% OR
+   ' à la ligne 2
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM o...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM o...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM o...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\ouvrageModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT * FROM o...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Ouvrage.php(52): App\Models\ouvrageModel->recherche('eker')
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Ouvrage->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ouvrage))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-08-17 01:56:12 --> La table 'seed_reception.ouvage' n'existe pas
+CRITICAL - 2022-08-17 01:56:12 --> La table 'seed_reception.ouvage' n'existe pas
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM o...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM o...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM o...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\ouvrageModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT * FROM o...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Ouvrage.php(52): App\Models\ouvrageModel->recherche('eker')
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Ouvrage->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ouvrage))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+CRITICAL - 2022-08-17 01:56:44 --> Undefined index: date
+#0 C:\wamp64\www\projet_stage\developpement\src\app\Views\liste_entreeArgent.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\p...', 43, Array)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(210): include('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\projet_stage\developpement\src\system\Common.php(1089): CodeIgniter\View\View->render('liste_entreeArg...', Array, true)
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Ouvrage.php(62): view('liste_entreeArg...', Array)
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Ouvrage->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ouvrage))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}
+ERROR - 2022-08-17 10:02:44 --> Erreur de syntaxe près de '%jean% OR prenom like %jean% OR
+            cni like %jean% OR tel like %jean%' à la ligne 2
+CRITICAL - 2022-08-17 10:02:44 --> Erreur de syntaxe près de '%jean% OR prenom like %jean% OR
+            cni like %jean% OR tel like %jean%' à la ligne 2
+#0 C:\wamp64\www\projet_stage\developpement\src\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM v...', 0)
+#1 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM v...')
+#2 C:\wamp64\www\projet_stage\developpement\src\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM v...')
+#3 C:\wamp64\www\projet_stage\developpement\src\app\Models\visiteurModel.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v...')
+#4 C:\wamp64\www\projet_stage\developpement\src\app\Controllers\Visiteur.php(43): App\Models\visiteurModel->recherche('jean')
+#5 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(832): App\Controllers\Visiteur->recherche()
+#6 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#7 C:\wamp64\www\projet_stage\developpement\src\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\projet_stage\developpement\src\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\projet_stage\developpement\src\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\p...')
+#10 {main}

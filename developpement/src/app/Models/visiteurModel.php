@@ -36,4 +36,19 @@ class visiteurModel extends Model
         $rst=$this->db->query('SELECT id FROM visiteur WHERE tel='.$vst['tel']);
         return($rst->getResult()[0]->id);
     }
+
+    public function recherche($chaine)
+    {
+        //rechreche en fonction de toutes les colonnes 
+        /* -- params --
+           $chaine: element a rechercher
+        */
+            $rst = $this->db->query("SELECT * FROM visiteur WHERE
+            nom like '%$chaine%' OR prenom like '%$chaine%' OR
+            cni like '%$chaine%' OR tel like '%$chaine%' ;
+            ");
+
+            return $rst->getResultArray();
+        
+    }
 }

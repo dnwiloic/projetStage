@@ -25,6 +25,11 @@ include_once("entete.php");
         <div class="list col-span-6">
 
             <h1 class="titre-tableau"> Liste des emprunt</h1>
+            <!-- inclusion de la zone de recherche  -->
+            <?php
+            $controller = "emprunt";
+            include("searchZone.php")
+            ?>
             <button class="open-popup btn-ajouter" popup_to_open="p_form_visiteur">Ajouter</button>
             <div>
                 <span>nombre d'elements: <span id="nbr_elt" class="text-blue-700"></span></span>
@@ -45,8 +50,8 @@ include_once("entete.php");
                     
                 ?>
                     <tr>
-                        <td><?php echo $emprunt['emprunteur']; ?></td>
-                        <td><?php echo $emprunt['livre']; ?></td>
+                        <td><?php echo $emprunt['nom']." ".$emprunt['prenom']; ?></td>
+                        <td><?php echo $emprunt['titre']; ?></td>
                         <td><?php echo $emprunt['date_emprunt']; ?></td>
                         <td><?php echo $emprunt['date_retour_prevu']; ?></td>
                         <td><?php echo $emprunt['date_retour_effectif']; ?></td>
