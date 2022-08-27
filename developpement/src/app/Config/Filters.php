@@ -2,6 +2,7 @@
 
 namespace Config;
 
+use App\Filters\ConnexionCheck;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
@@ -23,6 +24,7 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'connexionCheck'=> ConnexionCheck::class,
     ];
 
     /**
@@ -64,5 +66,8 @@ class Filters extends BaseConfig
      *
      * @var array
      */
-    public $filters = [];
+    public $filters = [
+        // On applique un filtre sur toutes les pages du site
+        'connexionCheck' => ['before' => ['*']]
+    ];
 }
