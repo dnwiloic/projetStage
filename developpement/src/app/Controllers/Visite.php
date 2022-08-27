@@ -58,6 +58,7 @@ class Visite extends BaseController
                 $visiteurModel->save($visiteur);
                 //recuperation de l'id du visiteur que l'ont vient d'enregistrer et ajout de la visite
                 $visite=['date'=>$_POST['date'],'heure_debut'=>$_POST['hd'], 'raison'=>$_POST['raison'], 'id_visiteur'=>(int)$visiteurModel->get_id($visiteur),'id_employer'=>(int)session()->get("userId") ];
+
                 if($visiteModel->save($visite))
                     session()->setFlashdata("success","visite enregistré avec succès");
                 else
