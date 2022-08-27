@@ -1,8 +1,6 @@
 <?php
 include_once("entete.php");
 ?>
-
-<body>
     <script type="text/javascript">
         var tab_json = <?php print json_encode($tab_visiteurs) ?>;
         var tab_appr = <?php print json_encode($tab_appr) ?>;

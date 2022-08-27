@@ -40,28 +40,34 @@ class Apprenant extends BaseController
                 'cni'=>'required',
                 'tel'=>'required',
                 ]) )
-                {
-                    echo "ajoutons le visiteur";
-                    $visiteur=['nom'=>$_POST['nom'],'prenom'=>$_POST['prenom'], 'cni'=>$_POST['cni'], 'tel'=>(int)$_POST['tel'] ];
-                   
-                    var_dump( $modelVisiteur->save($visiteur));
-                    echo "   ici";
-                    //recuperation de l'id du visiteur que l'ont vient d'enregistrer et ajout de la visite
-                    $id_visiteur=(int)$modelVisiteur->get_id($visiteur);
-                    $apprenant=['matricule'=>"mat-".$id_visiteur , 'id_visiteur'=>$id_visiteur];
-                    var_dump($modelApprenant->save($apprenant));
-                }
+            {
+                echo "ajoutons le visiteur";
+                $visiteur=['nom'=>$_POST['nom'],'prenom'=>$_POST['prenom'], 'cni'=>$_POST['cni'], 'tel'=>(int)$_POST['tel'] ];
+                
+                var_dump( $modelVisiteur->save($visiteur));
+                echo "   ici";
+                //recuperation de l'id du visiteur que l'ont vient d'enregistrer et ajout de la visite
+                $id_visiteur=(int)$modelVisiteur->get_id($visiteur);
+                $apprenant=['matricule'=>"mat-".$id_visiteur , 'id_visiteur'=>$id_visiteur];
+                if($modelApprenant->save($apprenant))
+                    session()->setFlashdata("success","Apprenant enregistré avec succès");
+                else
+                    session()->setFlashdata("fail","Erreur lors de l'enregistrement de l'apprenant");
+            }
+            else
+                session()->setFlashdata("fail","Le formulaire est mal rempli");
         }
         else if( isset($_POST['visiteur']))
         {
             $id_visiteur=$_POST['visiteur'];
             $apprenant=['id_visiteur'=>$id_visiteur, 'matricule'=>"mat-$id_visiteur"];
-            var_dump($modelApprenant->save($apprenant));
+            if($modelApprenant->save($apprenant))
+                session()->setFlashdata("success","apprenant enregistré avec succès");
+            else
+                session()->setFlashdata("fail","Erreur lors de l'enregistrement de l'apprenant");
         }
         else
-        {
-            echo "rien a faire";
-        }
+            session()->setFlashdata("fail","Certains parametres requis n'ont pas été envoyés");
 
         return redirect()->to(base_url('apprenant'));
     }
@@ -82,11 +88,10 @@ class Apprenant extends BaseController
                     $viewData['tab_visiteurs']=$visiteurModel->findAll();
                 }
                 else
-                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+                    session()->setFlashdata("notify",'Le motif de recherche fourni est une chaine vide');
         }
         else
-            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
-
+            session()->setFlashdata("notify","Aucun motif de recherche n'a été defini");
 
         return view('liste_apprenant',$viewData);
     }

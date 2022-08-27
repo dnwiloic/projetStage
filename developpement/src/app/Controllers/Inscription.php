@@ -57,15 +57,20 @@ class Inscription extends BaseController
                 'montant_paye'=>$_POST['mv'],'cout_total'=>$cout_total,'date_inscription'=>$_POST['date_ins'],
                 'date_debut'=>$_POST['date_debut'],'date_fin'=>$date_fin,'commentaire'=>$_POST['cmt']];
 
-                var_dump($mInscription->save($inscription));
+                if($mInscription->save($inscription))
+                    session()->setFlashdata("success","Inscription enregistré avec succès");
+                else
+                    session()->setFlashdata("fail","Erreur lors de l'enregistrement de l'inscription");
             }
             else
             {
                 //erreur
+                session()->setFlashdata("fail","Le formulaire mal rempli");
             }
         }
         else {
             //erreur
+            session()->setFlashdata("fail","Certains parametres requis n'ont pas été envoyés");
         }
         return redirect()->to(base_url('inscription'));
     }
@@ -88,10 +93,10 @@ class Inscription extends BaseController
                     $viewData['tab_appr']=$mAppr->get_apprenants();
                 }
                 else
-                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+                    session()->setFlashdata("notify",'Le motif de recherche fourni est une chaine vide');
         }
         else
-            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+            session()->setFlashdata("notify","Aucun motif de recherche n'a été defini");
 
 
         return view('liste_inscription',$viewData);

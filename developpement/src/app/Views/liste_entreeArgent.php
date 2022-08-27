@@ -1,9 +1,6 @@
 <?php
 include_once("entete.php");
 ?>
-
-<body>
-
     <script type="text/javascript">
         var tab_arg = <?php print json_encode($tab) ?>;
         console.log(tab_arg);

@@ -27,7 +27,7 @@ class employerModel extends Model
 
     public function verify_user($login, $password)
     {
-        $result = $this->db->query("SELECT id , login FROM employer WHERE login='$login' AND password='$password'");
+        $result = $this->db->query("SELECT id FROM employer WHERE login='$login' AND password='$password'");
         $ids = $result->getResult();
         if (empty($ids)) {
             return false;

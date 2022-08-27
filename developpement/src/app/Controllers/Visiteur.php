@@ -44,10 +44,10 @@ class Visiteur extends BaseController
                     $viewData['tab_visiteurs']=$donnees;
                 }
                 else
-                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+                    session()->setFlashdata("notify",'Le motif de recherche fourni est une chaine vide');
         }
         else
-            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+            session()->setFlashdata("notify","Aucun motif de recherche n'a été defini");
 
 
         return view('liste_visiteur',$viewData);

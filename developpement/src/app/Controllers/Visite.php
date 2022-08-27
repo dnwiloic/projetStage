@@ -55,25 +55,34 @@ class Visite extends BaseController
             ])  )
             {
                 $visiteur=['nom'=>$_POST['nom'],'prenom'=>$_POST['prenom'], 'cni'=>$_POST['cni'], 'tel'=>(int)$_POST['tel'] ];
-                var_dump($visiteurModel->save($visiteur)) ;
-                var_dump($visiteur) ;
+                $visiteurModel->save($visiteur);
                 //recuperation de l'id du visiteur que l'ont vient d'enregistrer et ajout de la visite
                 $visite=['date'=>$_POST['date'],'heure_debut'=>$_POST['hd'], 'raison'=>$_POST['raison'], 'id_visiteur'=>(int)$visiteurModel->get_id($visiteur),'id_employer'=>1 ];
-                var_dump($visiteModel->save($visite));
+                if($visiteModel->save($visite))
+                    session()->setFlashdata("success","visite enregistré avec succès");
+                else
+                    session()->setFlashdata("fail","Erreur lors de l'enregistrement de la visite");
             }
+            else
+                session()->setFlashdata("fail","Le formulaire mal rempli");
         }
         else if(isset($_POST['visiteur']) && isset($_POST['date']) && isset($_POST['hd']) && isset($_POST['raison']) )
         {
             $visite=['date'=>$_POST['date'],'heure_debut'=>$_POST['hd'], 'raison'=>$_POST['raison'], 'id_visiteur'=>(int)$_POST['visiteur'],'id_employer'=>1 ];
-                var_dump($visiteModel->save($visite));
+                if($visiteModel->save($visite))
+                    session()->setFlashdata("success","visite enregistré avec succès");
+                else
+                    session()->setFlashdata("fail","Erreur lors de l'enregistrement de la visite");
         }
         else if( isset($_POST['hf'] ) && isset($_POST['idv'] ) )
         {
-            echo 'id_visite: ';
-            echo $_POST['idv'];
-            $visiteModel->update((int)$_POST['idv'],['heure_fin'=>$_POST['hf']]);
+            if($visiteModel->update((int)$_POST['idv'],['heure_fin'=>$_POST['hf']]))
+                session()->setFlashdata("success","Heure de fin enregistré avec succès");
+            else
+                session()->setFlashdata("fail","Erreur lors de l'enregistrement de l'heure de fin");
         }
-        echo "fin";
+        else
+            session()->setFlashdata("fail","Certains parametres requis n'ont pas été envoyés");
 
         return redirect()->to(base_url('visite'));
     }
@@ -94,10 +103,10 @@ class Visite extends BaseController
                     $viewData['tab_visiteur']=$modelVisiteur->findAll();
                 }
                 else
-                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+                    session()->setFlashdata("notify",'Le motif de recherche fourni est une chaine vide');
         }
         else
-            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+            session()->setFlashdata("notify","Aucun motif de recherche n'a été defini");
 
 
         return view('liste_visite',$viewData);

@@ -49,33 +49,35 @@ class Abonne extends BaseController
                 'cni'=>'required',
                 'tel'=>'required',
                 ]) )
+            {
+                echo "ajoutons le visiteur";
+                $visiteur=['nom'=>$_POST['nom'],'prenom'=>$_POST['prenom'], 'cni'=>$_POST['cni'], 'tel'=>(int)$_POST['tel'] ];
+                var_dump( $modelVisiteur->save($visiteur));
+                
+                //recuperation de l'id du visiteur que l'ont vient d'enregistrer et ajout de la visite
+                $id_visiteur=(int)$modelVisiteur->get_id($visiteur);
+                
+                //calcul de la date d'expiration
+                $date_exp=date("Y-m-d", strtotime("+ 1 year ", strtotime($_POST['date_ins'])));
+                
+                $abonne=['id_visiteur'=>$id_visiteur,'montant_verse'=>(int)$_POST['montant_verse'] , 'date_inscription'=>$_POST['date_ins'],
+                    'cout_abonnement'=>15000, 'date_expiration'=>$date_exp];
+                    
+                if(isset($_POST['cout_total']))
                 {
-                    echo "ajoutons le visiteur";
-                    $visiteur=['nom'=>$_POST['nom'],'prenom'=>$_POST['prenom'], 'cni'=>$_POST['cni'], 'tel'=>(int)$_POST['tel'] ];
-                    var_dump( $modelVisiteur->save($visiteur));
-                    
-                    //recuperation de l'id du visiteur que l'ont vient d'enregistrer et ajout de la visite
-                    $id_visiteur=(int)$modelVisiteur->get_id($visiteur);
-                    
-                    //calcul de la date d'expiration
-                    $date_exp=date("Y-m-d", strtotime("+ 1 year ", strtotime($_POST['date_ins'])));
-                    
-                    $abonne=['id_visiteur'=>$id_visiteur,'montant_verse'=>(int)$_POST['montant_verse'] , 'date_inscription'=>$_POST['date_ins'],
-                        'cout_abonnement'=>15000, 'date_expiration'=>$date_exp];
-                        
-                    if(isset($_POST['cout_total']))
-                    {
-                        $abonne[ 'cout_abonnement']=(int)$_POST['cout_total'];
-                    }
-                    if(isset($_POST['cmg']))
-                    {
-                        $abonne[ 'carte_membre_genere']=(bool)$_POST['cmg'];
-                    }
-                    echo "\n";
-                    var_dump($abonne);
-                    var_dump($mAbonne->save($abonne));
-                    echo "   ici";
+                    $abonne[ 'cout_abonnement']=(int)$_POST['cout_total'];
                 }
+                if(isset($_POST['cmg']))
+                {
+                    $abonne[ 'carte_membre_genere']=(bool)$_POST['cmg'];
+                }
+                if($mAbonne->save($abonne))
+                    session()->setFlashdata("success","Abonnement enregistré avec succès");
+                else
+                    session()->setFlashdata("fail","Erreur lors de l'enregistrement de l'abonnement");
+            }
+            else
+                session()->setFlashdata("fail","Le formulaire mal rempli");
         }
         else if( isset($_POST['visiteur']) && isset($_POST['montant_verse']) && isset($_POST['date_ins']))
         {
@@ -94,12 +96,13 @@ class Abonne extends BaseController
             {
                 $abonne[ 'carte_membre_genere']=(bool)$_POST['cmg'];
             }
-            var_dump($mAbonne->save($abonne));
+            if($mAbonne->save($abonne))
+                session()->setFlashdata("success","Abonnement enregistré avec succès");
+            else
+                session()->setFlashdata("fail","Erreur lors de l'enregistrement de l'abonnement");
         }
         else
-        {
-            echo "rien a faire";
-        }
+            session()->setFlashdata("fail","Certains parametres requis n'ont pas été envoyés");
 
         return redirect()->to(base_url('abonne'));
     }
@@ -120,11 +123,10 @@ class Abonne extends BaseController
                     $viewData['tab_visiteurs']=$modelVisiteur->findAll();
                 }
                 else
-                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+                    session()->setFlashdata("notify",'Le motif de recherche fourni est une chaine vide');
         }
         else
-            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
-
+            session()->setFlashdata("notify","Aucun motif de recherche n'a été defini");
 
         return view('liste_abonne',$viewData); 
     }

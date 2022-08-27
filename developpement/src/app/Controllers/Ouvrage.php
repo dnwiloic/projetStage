@@ -34,8 +34,13 @@ class Ouvrage extends BaseController
             {
                 $livre[$key]=$val;
             }
-            var_dump( $mOuvrage->save($livre));
+            if( $mOuvrage->save($livre))
+                session()->setFlashdata("success","Ouvrage enregistré avec succès");
+            else
+                session()->setFlashdata("fail","Erreur lors de l'enregistrement de l'Ouvrage");
         }
+        else
+            session()->setFlashdata("fail","Certains parametres requis n'ont pas été envoyés");
         return redirect()->to(base_url('ouvrage'));
     }
 
@@ -53,10 +58,10 @@ class Ouvrage extends BaseController
                     $viewData['tab_livre']=$donnees;
                 }
                 else
-                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+                    session()->setFlashdata("notify",'Le motif de recherche fourni est une chaine vide');
         }
         else
-            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+            session()->setFlashdata("notify","Aucun motif de recherche n'a été defini");
 
 
         return view('liste_ouvrage',$viewData);
