@@ -52,22 +52,29 @@ class Formateur extends BaseController
                     $visiteur=['nom'=>$_POST['nom'],'prenom'=>$_POST['prenom'], 'cni'=>$_POST['cni'], 'tel'=>(int)$_POST['tel'] ];
                    
                     var_dump( $modelVisiteur->save($visiteur));
-                    echo "   ici";
                     //recuperation de l'id du visiteur que l'ont vient d'enregistrer et ajout de la visite
                     $id_visiteur=(int)$modelVisiteur->get_id($visiteur);
                     $formateur=['id_visiteur'=>$id_visiteur];
-                    var_dump($modelFormateur->save($formateur));
+                    if($modelFormateur->save($formateur))
+                        session()->setFlashdata("success","Enseignant enregistré avec succès");
+                    else
+                        session()->setFlashdata("fail","Erreur lors de l'enregistrement de l'Enseignant");
                 }
+                else
+                    session()->setFlashdata("fail","Le formulaire mal rempli");
         }
         else if( isset($_POST['visiteur']))
         {
             $id_visiteur=$_POST['visiteur'];
             $formateur=['id_visiteur'=>$id_visiteur];
-            var_dump($modelFormateur->save($formateur));
+            if($modelFormateur->save($formateur))
+                session()->setFlashdata("success","Enseignant enregistré avec succès");
+            else
+                session()->setFlashdata("fail","Erreur lors de l'enregistrement de l'Enseignant");
         }
         else
         {
-            echo "rien a faire";
+            session()->setFlashdata("fail","Certains parametres requis n'ont pas été envoyés");
         }
 
         return redirect()->to(base_url('formateur'));
@@ -91,10 +98,10 @@ class Formateur extends BaseController
                     $viewData['tab_visiteurs']=$modelVisiteur->findAll();
                 }
                 else
-                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+                    session()->setFlashdata("notify",'Le motif de recherche fourni est une chaine vide');
         }
         else
-            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+            session()->setFlashdata("notify","Aucun motif de recherche n'a été defini");
 
 
         return view('liste_formateur',$viewData);

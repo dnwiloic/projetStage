@@ -51,10 +51,17 @@ class mouvArgentModel extends Model
         */
         if ((int)$type == -1) {
             $rst = $this->db->query("CALL add_sortie_argent('$date','$somme' ,'$motif');");
+            if($rst)
+                return true;
+            return false;
         } else if ((int)$type == 1) {
             $rst = $this->db->query("CALL add_entree_argent('$date','$somme','$motif');");
+            if($rst)
+                return true;
+            return false;
         } else {
             //une erreur est generer
+            return false;
         }
     }
 

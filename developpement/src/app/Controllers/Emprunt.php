@@ -59,14 +59,18 @@ class Emprunt extends BaseController
                     {
                         $emp['date_retour_effectif']=$_POST['date_retour'];
                     }
-
-                    var_dump($emp);
-                    echo "<br>";
-                    var_dump($mEmprunt->save($emp));
-
-                    return redirect()->to(base_url('emprunt'));
+                    if($mEmprunt->save($emp))
+                        session()->setFlashdata("success","Emprunt enregistré avec succès");
+                    else
+                        session()->setFlashdata("fail","Erreur lors de l'enregistrement de l'Emprunt");
                 }
+                else
+                    session()->setFlashdata("fail","Le formulaire est mal rempli");
         }
+        else
+            session()->setFlashdata("fail","Certains parametres requis n'ont pas été envoyés");
+
+        return redirect()->to(base_url('emprunt'));
     }
 
     public function recherche()
@@ -87,10 +91,10 @@ class Emprunt extends BaseController
                     $viewData['tab_livre']=$mLivre->findAll();
                 }
                 else
-                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
-        }
-        else
-            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+                session()->setFlashdata("notify",'Le motif de recherche fourni est une chaine vide');
+    }
+    else
+        session()->setFlashdata("notify","Aucun motif de recherche n'a été defini");
 
 
         return view('liste_emprunt',$viewData);

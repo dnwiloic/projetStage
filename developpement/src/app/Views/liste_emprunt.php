@@ -2,9 +2,6 @@
 include_once("entete.php");
 
 ?>
-
-<body>
-
     <script type="text/javascript">
         var tab_emp = <?php print json_encode($tab_emprunt) ?>;
         var tab_abn = <?php print json_encode($tab_abn) ?>;

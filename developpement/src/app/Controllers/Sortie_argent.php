@@ -44,13 +44,18 @@ class Sortie_argent extends BaseController
                 ]) )
                 {
                     echo "ajoutons le mvt";
-                    $model->add_mvt_argent($_POST['date'],$_POST['somme'],$_POST['motif'],$this->type);
+                    if($model->add_mvt_argent($_POST['date'],$_POST['somme'],$_POST['motif'],$this->type))
+                        session()->setFlashdata("success","Enregistrement reussi");
+                    else
+                        session()->setFlashdata("fail","Erreur lors de l'enregistrement");
                 }
+                else
+                    session()->setFlashdata("fail","Le formulaire mal rempli");
         }
         else
         {
-            echo "rien a faire";
             //message d'erreur
+            session()->setFlashdata("fail","Certains parametres requis n'ont pas été envoyés");
         }
 
         return redirect()->to(base_url('Sortie_argent'));
@@ -70,10 +75,10 @@ class Sortie_argent extends BaseController
                     $viewData['tab']=$donnees;
                 }
                 else
-                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+                    session()->setFlashdata("notify",'Le motif de recherche fourni est une chaine vide');
         }
         else
-            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+            session()->setFlashdata("notify","Aucun motif de recherche n'a été defini");
 
 
         return view('liste_entreeArgent',$viewData);

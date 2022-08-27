@@ -35,7 +35,6 @@ class Formation extends BaseController
         echo "11";
         if( isset($_POST['nomF']) && isset($_POST['formateur']) && isset($_POST['prix']) && isset($_POST['duree']) && isset($_POST['cmt']))
         {
-            
             if( $this->validate([
                 'nomF'=>'required',
                 'formateur'=>'required',
@@ -44,13 +43,17 @@ class Formation extends BaseController
                 {
                     echo "ajout de la formation";
                     $formation=['nom'=>$_POST['nomF'],'prix'=>$_POST['prix'],'duree'=>$_POST['duree'],'commentaire'=>$_POST['cmt'],'id_formateur'=>(int)$_POST['formateur']];
-                    var_dump($mformation->save($formation));
-                    echo "ajout avec succes";
+                    if($mformation->save($formation))
+                        session()->setFlashdata("success","formation enregistré avec succès");
+                    else
+                        session()->setFlashdata("fail","Erreur lors de l'enregistrement de la formation");
                 }
+                else
+                    session()->setFlashdata("fail","Le formulaire mal rempli");
         }
         else
         {
-            echo "echec";
+            session()->setFlashdata("fail","Certains parametres requis n'ont pas été envoyés");
         }
 
         return redirect()->to(base_url('formation'));
@@ -72,10 +75,10 @@ class Formation extends BaseController
                     $viewData['tab_formateur']=$mFormateur->get_formateurs();
                 }
                 else
-                    $viewData['warnings']->array_push(['Le motif de recherche fourni est une chaine vide']);
+                    session()->setFlashdata("notify",'Le motif de recherche fourni est une chaine vide');
         }
         else
-            $viewData['errors']->array_push(["Aucun motif de recherche n'a été defini"]);
+            session()->setFlashdata("notify","Aucun motif de recherche n'a été defini");
 
 
         return view('liste_formation',$viewData);

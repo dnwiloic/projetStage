@@ -1,9 +1,7 @@
 <?php
 include_once("entete.php");
 ?>
-
-<body>
-    <script type="text/javascript">
+   <script type="text/javascript">
         var tab_livre = <?php print json_encode($tab_livre) ?>;
         console.log(tab_livre);
 

@@ -127,7 +127,7 @@ a
 
 .titre-tableau
 {
-    @apply text-2xl italic block border-l-8 w-fit pl-2 my-12 font-bold ;
+    @apply text-2xl italic my-8 block border-l-8 w-fit pl-2 font-bold ;
 }
 
 .btn-ajouter
